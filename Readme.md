@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Elena Valeeva](https://up.htmlacademy.ru/htmlcss/15/user/232403).
-* Наставник: `Неизвестно`.
+* Студент: [Elena Valeeva] (https://up.htmlacademy.ru/htmlcss/15/user/232403).
+* Наставник: [Антон Попов] (https://htmlacademy.ru/profile/joker).
 
 ---
 
