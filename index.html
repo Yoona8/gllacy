@@ -11,7 +11,7 @@
       <header class="header">
         <div class="container">
           <div class="header__content header__content_left">
-            <nav class="header__nav nav">
+            <nav class="nav">
               <ul class="nav__list">
                 <li class="nav__item">
                   <a class="nav__link">
@@ -31,13 +31,11 @@
             </nav>
           </div>
           <div class="header__content header__content_right">
-            <div class="header__search search">
-              <form class="search__form" action="#" method="get">
-                <input type="text" class="search__input" name="search__input">
-                <button type="submit" class="btn btn_search"></button>
-              </form>
-            </div>
-            <div class="header__userbar userbar">
+            <form class="search" action="#" method="get">
+              <input type="text" class="search__input" name="search__input">
+              <button type="submit" class="btn btn_search"></button>
+            </form>
+            <div class="userbar">
               <ul class="userbar__list">
                 <li class="userbar__item">
                   <a href="#" class="btn btn_login">Вход</a>
@@ -47,7 +45,7 @@
                 </li>
               </ul>
             </div>
-            <div class="header__contacts contacts">
+            <div class="contacts">
               <span class="contacts__open">С 10 до 20, ежедневно</span>
               <span class="contacts__tel">8 812 450-25-25</span>
             </div>
@@ -57,7 +55,7 @@
       <main class="main">
         <div class="container">
           <div class="main__content">
-            <section class="main__slider slider">
+            <section class="slider">
               <div class="slider__display">
                 <div class="slider__slide">
                   <div class="slider__title">
@@ -100,7 +98,7 @@
             </section>
           </div>
           <div class="main__content">
-            <ul class="main__event event">
+            <ul class="event">
               <li class="event__item event__item_raspberry">
                 <span class="event__title">Малинка даром!</span>
                 <p class="event__dscr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum omnis id saepe officiis minima tempora. Similique sit, reiciendis possimus libero.</p>
@@ -114,7 +112,7 @@
             </ul>
           </div>
           <div class="main__content">
-            <ul class="main__goods goods">
+            <ul class="goods">
               <li class="goods__item goods__item_orange">
                 <span class="goods__label">Хит</span>
                 <span class="goods__price">310 р<i class="goods__kg">/кг</i></span>
@@ -138,7 +136,7 @@
             </ul>
           </div>
           <div class="main__content">
-            <section class="main__advantages advantages">
+            <section class="advantages">
               <p class="advantages__lead">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
               <div class="advantages__col">
                 <ul class="advantages__list">
@@ -163,7 +161,7 @@
             </section>
           </div>
           <div class="main__content">
-            <section class="main__news news">
+            <section class="news">
               <div class="news__item news__item_blog">
                 <span>Новое в нашем блоге</span>
                 <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -178,7 +176,7 @@
             </section>
           </div>
           <div class="main__content">
-            <section class="main__map map">
+            <section class="map">
               <div class="map__contacts">
                 <p class="map__text">
                   <span class="map__text-small">Адрес главного офиса и онлайн магазина:</span>
@@ -198,7 +196,7 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__content footer__content_left">
-            <div class="footer__social social">
+            <div class="social">
               <ul class="social__list">
                 <li class="social__item">
                   <a href="#" class="btn-social btn-social_tw">Twitter</a>
@@ -216,7 +214,7 @@
             </div>
           </div>
           <div class="footer__content footer__content_middle">
-            <div class="footer__menu menu">
+            <div class="menu">
               <ul class="menu__list">
                 <li class="menu__item menu__item_featured">
                   <a href="#" class="menu__link menu__link_featured">Для поставщиков</a>
@@ -234,7 +232,7 @@
             </div>
           </div>
           <div class="footer__content footer__content_right">
-            <div class="footer__developer developer">
+            <div class="developer">
               <a href="https://htmlacademy.ru">
                 <img class="developer__logo-img" src="developer.png" width="108" height="38" alt="HTMLAcademy" title="HTMLAcademy">
               </a>
