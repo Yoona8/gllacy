@@ -1,238 +1,230 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Глейси</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <div class="site-wrapper">
-      <header class="header">
-        <div class="container">
-          <div class="header__content header__content--left">
-            <div class="logo">
-              <img class="nav__logo-img" src="logo.svg" width="154" height="64" alt="Глейси">
-            </div>
-            <nav class="nav">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Каталог</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Доставка и оплата</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">О Компании</a>
-                </li>
-              </ul>
-            </nav>
+
+<head>
+  <meta charset="utf-8">
+  <title>Глейси</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__content header__content--left">
+          <div class="logo">
+            <img class="nav__logo-img" src="logo.svg" width="154" height="64" alt="Глейси">
           </div>
-          <div class="header__content header__content--right">
-            <form class="search__form" action="#" method="get">
-              <input type="search" class="search__input" name="search__input">
-              <button type="submit" class="btn btn--search">Поиск</button>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Каталог</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Доставка и оплата</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">О Компании</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__content header__content--right">
+          <form class="search__form" action="#" method="get">
+            <input type="search" class="search__input" name="search__input">
+            <button type="submit" class="btn btn--search">Поиск</button>
+          </form>
+          <div class="userbar">
+            <a href="#" class="btn btn--login">Вход</a>
+            <a href="#" class="btn btn--cart">Пусто</a>
+          </div>
+          <div class="contacts">
+            <span class="contacts__open">С 10 до 20, ежедневно</span>
+            <span class="contacts__tel">8 812 450-25-25</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="slider">
+          <div class="slider__display">
+            <div class="slider__slide">
+              <div class="slider__title">
+                <span>Крем-брюле и пломбир с малиновым джемом</span>
+              </div>
+              <div class="slider__button">
+                <a href="#" class="btn btn_main btn_main-slider">Давайте оба!</a>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slider__title">
+                <span>Крем-брюле и пломбир с малиновым джемом</span>
+              </div>
+              <div class="slider__button">
+                <a href="#" class="btn btn_main btn_main-slider">Давайте оба!</a>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slider__title">
+                <span>Крем-брюле и пломбир с малиновым джемом</span>
+              </div>
+              <div class="slider__button">
+                <a href="#" class="btn btn_main btn_main-slider">Давайте оба!</a>
+              </div>
+            </div>
+          </div>
+          <div class="slider__thumbs">
+            <ul class="slider__thumbs-list">
+              <li class="slider__thumbs-item">
+                <button type="button" class="btn-slider">1</button>
+              </li>
+              <li class="slider__thumbs-item">
+                <button type="button" class="btn-slider">2</button>
+              </li>
+              <li class="slider__thumbs-item">
+                <button type="button" class="btn-slider">3</button>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <ul class="event">
+          <li class="event__item event__item_raspberry">
+            <span class="event__title">Малинка даром!</span>
+            <p class="event__dscr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum omnis id saepe officiis minima tempora. Similique sit, reiciendis possimus libero.</p>
+            <a class="btn btn_main btn_main-event">Хочу варенье!</a>
+          </li>
+          <li class="event__item event__item_chocolate">
+            <span class="event__title">Шоколадки даром!</span>
+            <p class="event__dscr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi veniam non excepturi tenetur voluptatem veritatis impedit eos voluptatum reiciendis error!</p>
+            <a class="btn btn_main btn_main-event">Хочу шоколадки!</a>
+          </li>
+        </ul>
+        <ul class="goods">
+          <li class="goods__item goods__item_orange">
+            <span class="goods__label">Хит</span>
+            <span class="goods__price">310 р<i class="goods__kg">/кг</i></span>
+            <p class="goods__dscr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, aut!</p>
+          </li>
+          <li class="goods__item goods__item_coffee">
+            <span class="goods__label">Хит</span>
+            <span class="goods__price">380 р<i class="goods__kg">/кг</i></span>
+            <p class="goods__dscr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</p>
+          </li>
+          <li class="goods__item goods__item_strawberry">
+            <span class="goods__label">Хит</span>
+            <span class="goods__price">355 р<i class="goods__kg">/кг</i></span>
+            <p class="goods__dscr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus.</p>
+          </li>
+          <li class="goods__item goods__item_creme">
+            <span class="goods__label">Хит</span>
+            <span class="goods__price">415 р<i class="goods__kg">/кг</i></span>
+            <p class="goods__dscr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quas!</p>
+          </li>
+        </ul>
+        <section class="advantages">
+          <p class="advantages__lead">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+          <div class="advantages__col">
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia esse placeat consequatur id, vero, nihil accusamus nemo expedita ad eum, nulla minus. Ad excepturi molestiae reiciendis quae expedita id similique!</span>
+              </li>
+              <li class="advantages__item">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fuga, laborum beatae nemo nostrum alias error eos provident minus adipisci, praesentium repudiandae non sit. Cupiditate ipsa omnis consequuntur aperiam laboriosam.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="advantages__col">
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque explicabo veritatis optio inventore, rerum distinctio. Perferendis, commodi, maxime. Atque asperiores ipsa praesentium fuga in explicabo tempora itaque maiores consectetur assumenda!</span>
+              </li>
+              <li class="advantages__item">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita doloribus error inventore minus vel blanditiis voluptatibus ex in deleniti sed, aspernatur voluptates! Repellat quam modi illum aperiam rerum deleniti! Fuga.</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="news">
+          <div class="news__item news__item_blog">
+            <span>Новое в нашем блоге</span>
+            <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+          </div>
+          <div class="news__item news__item_subscription">
+            <p>Подпишитесь ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, dignissimos unde eaque architecto culpa perspiciatis amet suscipit, nemo pariatur eveniet veniam numquam. Est perspiciatis, excepturi harum asperiores, soluta
+              provident, ratione officia molestias ipsum ad ab sequi fugit repudiandae animi nobis.</p>
+            <form form class="news__form" action="#" method="post">
+              <input type="text" class="news__input" name="news__input" placeholder="Электронная почта">
+              <button type="submit" class="btn btn_main btn_main-news"></button>
             </form>
-            <div class="userbar">
-              <a href="#" class="btn btn--login">Вход</a>
-              <a href="#" class="btn btn--cart">Пусто</a>
-            </div>
-            <div class="contacts">
-              <span class="contacts__open">С 10 до 20, ежедневно</span>
-              <span class="contacts__tel">8 812 450-25-25</span>
-            </div>
           </div>
-        </div>
-      </header>
-      <main class="main">
-        <div class="container">
-          <div class="main__content">
-            <section class="slider">
-              <div class="slider__display">
-                <div class="slider__slide">
-                  <div class="slider__title">
-                    <span>Крем-брюле и пломбир с малиновым джемом</span>
-                  </div>
-                  <div class="slider__button">
-                    <a href="#" class="btn btn_main btn_main-slider">Давайте оба!</a>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="slider__title">
-                    <span>Крем-брюле и пломбир с малиновым джемом</span>
-                  </div>
-                  <div class="slider__button">
-                    <a href="#" class="btn btn_main btn_main-slider">Давайте оба!</a>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="slider__title">
-                    <span>Крем-брюле и пломбир с малиновым джемом</span>
-                  </div>
-                  <div class="slider__button">
-                    <a href="#" class="btn btn_main btn_main-slider">Давайте оба!</a>
-                  </div>
-                </div>
-              </div>
-              <div class="slider__thumbs">
-                <ul class="slider__thumbs-list">
-                  <li class="slider__thumbs-item">
-                    <button type="button" class="btn-slider">1</button>
-                  </li>
-                  <li class="slider__thumbs-item">
-                    <button type="button" class="btn-slider">2</button>
-                  </li>
-                  <li class="slider__thumbs-item">
-                    <button type="button" class="btn-slider">3</button>
-                  </li>
-                </ul>
-              </div>
-            </section>
+        </section>
+        <section class="map">
+          <div class="map__contacts">
+            <p class="map__text">
+              <span class="map__text-small">Адрес главного офиса и онлайн магазина:</span>
+              <span class="map__text-big">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+            </p>
+            <p class="map__text">
+              <span class="map__text-small">Для заказов по телефону:</span>
+              <span class="map__text-big">8 812 450-25-25</span>
+              <span class="map__text-small">(с 10 до 20 ежедневно)</span>
+            </p>
+            <a href="#" class="btn btn_main btn_main-map">Форма обратной связи</a>
           </div>
-          <div class="main__content">
-            <ul class="event">
-              <li class="event__item event__item_raspberry">
-                <span class="event__title">Малинка даром!</span>
-                <p class="event__dscr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum omnis id saepe officiis minima tempora. Similique sit, reiciendis possimus libero.</p>
-                <a class="btn btn_main btn_main-event">Хочу варенье!</a>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content footer__content--left">
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="btn-social btn-social--tw">Twitter</a>
               </li>
-              <li class="event__item event__item_chocolate">
-                <span class="event__title">Шоколадки даром!</span>
-                <p class="event__dscr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi veniam non excepturi tenetur voluptatem veritatis impedit eos voluptatum reiciendis error!</p>
-                <a class="btn btn_main btn_main-event">Хочу шоколадки!</a>
+              <li class="social__item">
+                <a href="#" class="btn-social btn-social--inst">Instagram</a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="btn-social btn-social--fb">Facebook</a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="btn-social btn-social--vk">VKontakte</a>
               </li>
             </ul>
           </div>
-          <div class="main__content">
-            <ul class="goods">
-              <li class="goods__item goods__item_orange">
-                <span class="goods__label">Хит</span>
-                <span class="goods__price">310 р<i class="goods__kg">/кг</i></span>
-                <p class="goods__dscr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, aut!</p>
+        </div>
+        <div class="footer__content footer__content--middle">
+          <div class="menu">
+            <ul class="menu__list">
+              <li class="menu__item menu__item--featured">
+                <a href="#" class="menu__link menu__link--featured">Для поставщиков</a>
               </li>
-              <li class="goods__item goods__item_coffee">
-                <span class="goods__label">Хит</span>
-                <span class="goods__price">380 р<i class="goods__kg">/кг</i></span>
-                <p class="goods__dscr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</p>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Наши документы</a>
               </li>
-              <li class="goods__item goods__item_strawberry">
-                <span class="goods__label">Хит</span>
-                <span class="goods__price">355 р<i class="goods__kg">/кг</i></span>
-                <p class="goods__dscr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus.</p>
+              <li class="menu__item">
+                <a href="#" class="menu__link">О производстве</a>
               </li>
-              <li class="goods__item goods__item_creme">
-                <span class="goods__label">Хит</span>
-                <span class="goods__price">415 р<i class="goods__kg">/кг</i></span>
-                <p class="goods__dscr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quas!</p>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Экологические стандарты</a>
               </li>
             </ul>
           </div>
-          <div class="main__content">
-            <section class="advantages">
-              <p class="advantages__lead">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
-              <div class="advantages__col">
-                <ul class="advantages__list">
-                  <li class="advantages__item">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia esse placeat consequatur id, vero, nihil accusamus nemo expedita ad eum, nulla minus. Ad excepturi molestiae reiciendis quae expedita id similique!</span>
-                  </li>
-                  <li class="advantages__item">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fuga, laborum beatae nemo nostrum alias error eos provident minus adipisci, praesentium repudiandae non sit. Cupiditate ipsa omnis consequuntur aperiam laboriosam.</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="advantages__col">
-                <ul class="advantages__list">
-                  <li class="advantages__item">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque explicabo veritatis optio inventore, rerum distinctio. Perferendis, commodi, maxime. Atque asperiores ipsa praesentium fuga in explicabo tempora itaque maiores consectetur assumenda!</span>
-                  </li>
-                  <li class="advantages__item">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita doloribus error inventore minus vel blanditiis voluptatibus ex in deleniti sed, aspernatur voluptates! Repellat quam modi illum aperiam rerum deleniti! Fuga.</span>
-                  </li>
-                </ul>
-              </div>
-            </section>
-          </div>
-          <div class="main__content">
-            <section class="news">
-              <div class="news__item news__item_blog">
-                <span>Новое в нашем блоге</span>
-                <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-              </div>
-              <div class="news__item news__item_subscription">
-                <p>Подпишитесь ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, dignissimos unde eaque architecto culpa perspiciatis amet suscipit, nemo pariatur eveniet veniam numquam. Est perspiciatis, excepturi harum asperiores, soluta provident, ratione officia molestias ipsum ad ab sequi fugit repudiandae animi nobis.</p>
-                <form form class="news__form" action="#" method="post">
-                  <input type="text" class="news__input" name="news__input" placeholder="Электронная почта">
-                  <button type="submit" class="btn btn_main btn_main-news"></button>
-                </form>
-              </div>
-            </section>
-          </div>
-          <div class="main__content">
-            <section class="map">
-              <div class="map__contacts">
-                <p class="map__text">
-                  <span class="map__text-small">Адрес главного офиса и онлайн магазина:</span>
-                  <span class="map__text-big">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-                </p>
-                <p class="map__text">
-                  <span class="map__text-small">Для заказов по телефону:</span>
-                  <span class="map__text-big">8 812 450-25-25</span>
-                  <span class="map__text-small">(с 10 до 20 ежедневно)</span>
-                </p>
-                <a href="#" class="btn btn_main btn_main-map">Форма обратной связи</a>
-              </div>
-            </section>
+        </div>
+        <div class="footer__content footer__content--right">
+          <div class="developer">
+            <a href="https://htmlacademy.ru">
+              <img class="developer__logo-img" src="developer.png" width="108" height="38" alt="HTMLAcademy" title="HTMLAcademy">
+            </a>
+            <span class="developer__copy">Сделано в HTML Academy &copy; 2016</span>
           </div>
         </div>
-      </main>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer__content footer__content--left">
-            <div class="social">
-              <ul class="social__list">
-                <li class="social__item">
-                  <a href="#" class="btn-social btn-social--tw">Twitter</a>
-                </li>
-                <li class="social__item">
-                  <a href="#" class="btn-social btn-social--inst">Instagram</a>
-                </li>
-                <li class="social__item">
-                  <a href="#" class="btn-social btn-social--fb">Facebook</a>
-                </li>
-                <li class="social__item">
-                  <a href="#" class="btn-social btn-social--vk">VKontakte</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer__content footer__content--middle">
-            <div class="menu">
-              <ul class="menu__list">
-                <li class="menu__item menu__item--featured">
-                  <a href="#" class="menu__link menu__link--featured">Для поставщиков</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Наши документы</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">О производстве</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Экологические стандарты</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer__content footer__content--right">
-            <div class="developer">
-              <a href="https://htmlacademy.ru">
-                <img class="developer__logo-img" src="developer.png" width="108" height="38" alt="HTMLAcademy" title="HTMLAcademy">
-              </a>
-              <span class="developer__copy">Сделано в HTML Academy &copy; 2016</span>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </body>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
