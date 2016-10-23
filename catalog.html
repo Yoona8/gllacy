@@ -78,8 +78,69 @@
               </li>
             </ul>
           </nav>
-          <h1 class="page-title"></h1>
-          <form action="" class="sorting__form"></form>
+          <h1 class="page-title">Сливочное мороженое</h1>
+          <form class="sorting__form" action="#" method="post">
+            <fieldset class="sorting__item">
+              <legend class="sorting__title">Сортировка:</legend>
+              <select class="sorting__select" name="order">
+                <option class="sorting__option" value="popular">По популярности</option>
+                <option class="sorting__option" value="cheap">Сначала недорогие</option>
+                <option class="sorting__option" value="expensive">Сначала дорогие</option>
+                <option class="sorting__option" value="fat">По жирности</option>
+              </select>
+            </fieldset>
+            <fieldset class="sorting__item">
+              <legend class="sorting__title">Цена: 100 руб. - 500 руб.</legend>
+              <input class="sorting__input" type="number" name="price-min" placeholder="100">
+              <input class="sorting__input" type="number" name="price-max" placeholder="500">
+              <div class="sorting__slider">
+                <!-- заготовка под слайдер на js -->
+              </div>
+            </fieldset>
+            <fieldset class="sorting__item">
+              <legend class="sorting__title">Жирность:</legend>
+              <div class="sorting__radio-item">
+                <input class="sorting__input" id="fat-zero" name="fat" type="radio" value="fat-zero">
+                <label class="sorting__label" for="fat-zero">0%</label>
+              </div>
+              <div class="sorting__radio-item">
+                <input class="sorting__input" id="fat-less-ten" name="fat" type="radio" value="fat-less-ten" checked>
+                <label class="sorting__label" for="fat-less-ten">до 10%</label>
+              </div>
+              <div class="sorting__radio-item">
+                <input class="sorting__input" id="fat-less-thirty" name="fat" type="radio" value="fat-less-thirty">
+                <label class="sorting__label" for="fat-less-thirty">до 30%</label>
+              </div>
+              <div class="sorting__radio-item">
+                <input class="sorting__input" id="fat-more-thirty" name="fat" type="radio" value="fat-more-thirty">
+                <label class="sorting__label" for="fat-more-thirty">выше 30%</label>
+              </div>
+            </fieldset>
+            <fieldset class="sorting__item">
+              <legend class="sorting__title">Наполнители:</legend>
+              <div class="sorting__checkbox-item">
+                <input class="sorting__input" id="top-chocolate" name="toppings" type="checkbox" value="top-chocolate" checked>
+                <label class="sorting__label" for="top-chocolate">Шоколадные</label>
+              </div>
+              <div class="sorting__checkbox-item">
+                <input class="sorting__input" id="top-sugar" name="toppings" type="checkbox" value="top-sugar" checked>
+                <label class="sorting__label" for="top-sugar">Сахарные присыпки</label>
+              </div>
+              <div class="sorting__checkbox-item">
+                <input class="sorting__input" id="top-fruit" name="toppings" type="checkbox" value="top-fruit">
+                <label class="sorting__label" for="top-fruit">Фрукты</label>
+              </div>
+              <div class="sorting__checkbox-item">
+                <input class="sorting__input" id="top-syrup" name="toppings" type="checkbox" value="top-syrup">
+                <label class="sorting__label" for="top-syrup">Сиропы</label>
+              </div>
+              <div class="sorting__checkbox-item">
+                <input class="sorting__input" id="top-jam" name="toppings" type="checkbox" value="top-jam">
+                <label class="sorting__label" for="top-jam">Джемы</label>
+              </div>
+            </fieldset>
+            <button class="btn btn--sorting">Применить</button>
+          </form>
           <section class="goods">
             <article class="goods__item">
               <img class="goods__img" src="./img/placeholder.jpg" width="" height="" alt="Апельсиновое">
