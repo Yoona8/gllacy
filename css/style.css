@@ -4,7 +4,34 @@
    h5 - каталог
 */
 
-/* fonts */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto.woff') format('woff'),
+       url('../fonts/roboto.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/robotomedium.woff') format('woff'),
+       url('../fonts/robotomedium.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* global styles */
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.375;
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
 
 /* layout */
 
