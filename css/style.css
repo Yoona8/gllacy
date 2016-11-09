@@ -33,6 +33,10 @@ body {
   font-family: 'Roboto', 'Arial', sans-serif;
 }
 
+.site-wrapper {
+  background-color: #849d8f;
+}
+
 /* layout */
 
 .container {
