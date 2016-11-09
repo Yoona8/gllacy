@@ -37,6 +37,8 @@ body {
   background-color: #849d8f;
 }
 
+/* END: global styles */
+
 /* layout */
 
 .container {
@@ -73,13 +75,6 @@ body {
   height: 64px;
   vertical-align: middle;
 }
-
-/* main */
-/* END: main */
-
-/* footer */
-/* END: footer */
-
 
 /* Slider */
 
