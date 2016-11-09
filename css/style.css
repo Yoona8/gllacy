@@ -156,4 +156,20 @@ body {
   background-color: #ffffff;
 }
 
+.slider__slide {
+  display: none;
+}
+
+.slider__radio[value="radio-one"]:checked ~* .slider__slide--one {
+  display: block;
+}
+
+.slider__radio[value="radio-two"]:checked ~* .slider__slide--two {
+  display: block;
+}
+
+.slider__radio[value="radio-three"]:checked ~* .slider__slide--three {
+  display: block;
+}
+
 /* END: Slider */
