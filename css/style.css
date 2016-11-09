@@ -6,7 +6,19 @@
 
 /* fonts */
 
-/* colors */
+/* Slider */
+
+.slider__radio[value="radio-one"]:checked ~ .site-wrapper {
+  background-color: #849d8f;
+}
+
+.slider__radio[value="radio-two"]:checked ~ .site-wrapper {
+  background-color: #8996a6;
+}
+
+.slider__radio[value="radio-three"]:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+}
 
 /* layout */
 
