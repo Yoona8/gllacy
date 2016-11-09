@@ -29,6 +29,11 @@
   float: right;
 }
 
+.footer__content {
+  float: left;
+  width: 33%;
+}
+
 /* END: layout */
 
 /* header */
