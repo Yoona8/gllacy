@@ -63,8 +63,12 @@ body {
 
 /* END: layout */
 
-/* header */
-/* END: header */
+.logo {
+  display: inline-block;
+  width: 154px;
+  height: 64px;
+  vertical-align: middle;
+}
 
 /* main */
 /* END: main */
