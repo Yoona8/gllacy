@@ -138,10 +138,16 @@ body {
   display: inline-block;
   width: 16px;
   height: 16px;
+  margin-right: 2px;
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 50%;
   vertical-align: middle;
+}
+
+.slider__label:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
 }
 
 .slider__radio[value="radio-one"]:checked ~* .slider__label[for="radio-one"] {
