@@ -138,6 +138,54 @@ body {
   display: none;
 }
 
+.event {
+  font-size: 0;
+  margin-left: -2.2%;
+}
+
+.event__item {
+  display: inline-block;
+  width: 46.6%;
+  margin-left: 2.2%;
+  font-size: 1.8rem;
+  line-height: 1.222;
+  text-align: right;
+  vertical-align: top;
+  color: #ffffff;
+}
+
+.event__item--raspberry {
+  background-color: #7b1a37;
+  background-image: url('../img/bg/bg-raspberry.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.event__item--chocolate {
+  background-color: #43210f;
+  background-image: url('../img/bg/bg-choco.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.event__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.171;
+  text-align: left;
+}
+
+.event__dscr {
+  margin-top: 0;
+  text-align: left;
+}
+
+.event .btn-main {
+  margin-top: 27px;
+}
+
 /* Slider */
 
 .slider__radio {
@@ -192,6 +240,7 @@ body {
 
 .slider {
   position: relative;
+  margin-bottom: 40px;
 }
 
 .slider__slide {
