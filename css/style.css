@@ -53,6 +53,13 @@ body {
   cursor: pointer;
 }
 
+.btn-main--big {
+  padding: 11px 40px;
+  font-size: 3.2rem;
+  line-height: 1.375;
+  border-radius: 33px;
+}
+
 /* END: global styles */
 
 /* layout */
@@ -187,6 +194,7 @@ body {
   display: none;
   max-width: 700px;
   margin: 320px auto 0;
+  text-align: center;
 }
 
 .slider__title {
