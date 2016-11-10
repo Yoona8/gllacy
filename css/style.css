@@ -140,6 +140,7 @@ body {
 
 .event {
   margin-left: -26px;
+  margin-bottom: 40px;
   font-size: 0;
 }
 
@@ -186,6 +187,53 @@ body {
 
 .event .btn-main {
   margin-top: 27px;
+}
+
+.goods {
+  margin-left: -26px;
+  margin-bottom: 40px;
+  font-size: 0;
+}
+
+.goods__item {
+  position: relative;
+  display: inline-block;
+  width: 267px;
+  margin-left: 26px;
+  vertical-align: top;
+}
+
+.goods__item--featured::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 61px;
+  height: 61px;
+  background-color: #ffffff;
+  background-image: url('../img/icons/hit.jpg');
+  border-radius: 50%;
+}
+
+.goods__img {
+  width: 267px;
+  height: 267px;
+  border-radius: 50%;
+}
+
+.goods__price {
+  position: absolute;
+  left: 0;
+  top: 210px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.goods__kg {
+  font-size: 3.0rem;
 }
 
 /* Slider */
