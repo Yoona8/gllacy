@@ -191,6 +191,7 @@ body {
 .slider__title {
   margin-top: 0;
   margin-bottom: 32px;
+  font-weight: 700;
   font-size: 6.0rem;
   line-height: 1;
   text-align: center;
