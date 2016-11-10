@@ -65,9 +65,9 @@ body {
 /* layout */
 
 .container {
-  width: 1200px;
+  width: 1146px;
   margin: 0 auto;
-  padding: 0 2.3%;
+  padding: 0 27px;
 }
 
 .clearfix::before,
@@ -139,15 +139,15 @@ body {
 }
 
 .event {
-  margin-left: -2.2%;
+  margin-left: -26px;
   font-size: 0;
 }
 
 .event__item {
   display: inline-block;
-  width: 45%;
+  width: 526px;
   padding: 19px 17px;
-  margin-left: 2.2%;
+  margin-left: 26px;
   font-size: 1.8rem;
   line-height: 1.222;
   text-align: right;
