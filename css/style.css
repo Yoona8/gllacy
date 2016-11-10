@@ -73,6 +73,7 @@ body {
   display: inline-block;
   width: 154px;
   height: 64px;
+  margin-right: 24px;
   vertical-align: middle;
 }
 
@@ -108,6 +109,10 @@ body {
 
 .nav__item:hover .nav__link {
   color: #333333;
+}
+
+.nav__sub-list {
+  display: none;
 }
 
 /* Slider */
