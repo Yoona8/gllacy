@@ -139,19 +139,21 @@ body {
 }
 
 .event {
-  font-size: 0;
   margin-left: -2.2%;
+  font-size: 0;
 }
 
 .event__item {
   display: inline-block;
-  width: 46.6%;
+  width: 45%;
+  padding: 19px 17px;
   margin-left: 2.2%;
   font-size: 1.8rem;
   line-height: 1.222;
   text-align: right;
   vertical-align: top;
   color: #ffffff;
+  border-radius: 12px;
 }
 
 .event__item--raspberry {
