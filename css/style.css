@@ -164,6 +164,17 @@ body {
 
 .slider__slide {
   display: none;
+  max-width: 700px;
+  margin: 320px auto 0;
+}
+
+.slider__title {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 6.0rem;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
 }
 
 .slider__radio[value="radio-one"]:checked ~* .slider__slide--one {
