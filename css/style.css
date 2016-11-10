@@ -37,6 +37,21 @@ body {
   background-color: #849d8f;
 }
 
+.btn-main {
+  display: inline-block;
+  padding: 11px 21px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-decoration: none;
+  vertical-align: middle;
+  color: #ffffff;
+  background-image: linear-gradient(#f16743 0%, #c83725 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
 /* END: global styles */
 
 /* layout */
