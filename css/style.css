@@ -190,6 +190,10 @@ body {
   background-color: #ffffff;
 }
 
+.slider {
+  position: relative;
+}
+
 .slider__slide {
   display: none;
   max-width: 700px;
@@ -205,6 +209,12 @@ body {
   line-height: 1;
   text-align: center;
   color: #ffffff;
+}
+
+.slider__thumbs {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
 }
 
 .slider__radio[value="radio-one"]:checked ~* .slider__slide--one {
