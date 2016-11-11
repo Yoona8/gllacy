@@ -138,13 +138,15 @@ body {
   display: none;
 }
 
-.event {
+.event,
+.news {
   margin-left: -26px;
   margin-bottom: 40px;
   font-size: 0;
 }
 
-.event__item {
+.event__item,
+.news__item {
   display: inline-block;
   width: 526px;
   padding: 19px 17px;
@@ -234,6 +236,29 @@ body {
 
 .goods__kg {
   font-size: 3.0rem;
+}
+
+.advantages {
+  margin-bottom: 40px;
+}
+
+.map {
+  width: 1200px;
+  height: 430px;
+  margin: 0 auto;
+}
+
+.map .container {
+  position: relative;
+  height: 100%;
+}
+
+.map__contacts {
+  position: absolute;
+  top: 62px;
+  right: 27px;
+  width: 303px;
+  background-color: #ffffff;
 }
 
 /* Slider */
