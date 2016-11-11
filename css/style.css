@@ -265,8 +265,47 @@ body {
   background-color: #ffffff;
 }
 
-.footer {
+.social {
+  font-size: 0;
+}
 
+.social__link {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  background-image: url('../img/icons/sprite.png');
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  opacity: 0.8;
+}
+
+.social__link--tw {
+  background-position: -109px 0;
+}
+
+.social__link--inst {
+  background-position: -54px 0;
+}
+
+.social__link--fb {
+  background-position: 0 0;
+}
+
+.social__link--vk {
+  background-position: -166px 0;
+}
+
+.social__link:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+.social__link:active {
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0px 2px 1px 0px #888888;
+  opacity: 0.9;
 }
 
 /* Slider */
