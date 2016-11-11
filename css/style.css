@@ -79,10 +79,12 @@ body {
 
 .header__content--left {
   float: left;
+  max-width: 70%;
 }
 
 .header__content--right {
   float: right;
+  max-width: 30%;
 }
 
 .footer__content {
