@@ -278,6 +278,7 @@ body {
   border-radius: 50%;
   background-image: url('../img/icons/sprite.png');
   background-repeat: no-repeat;
+  box-shadow: inset 3px 3px 3px 3px rgba(255, 255, 255, 0.8);
   vertical-align: middle;
   opacity: 0.8;
 }
@@ -300,6 +301,7 @@ body {
 
 .social__link:hover {
   border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: inset 3px 3px 3px 3px #ffffff;
   opacity: 1;
 }
 .social__link:active {
