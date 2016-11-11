@@ -208,6 +208,25 @@ body {
   vertical-align: top;
 }
 
+.goods__item .btn-main {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 50%;
+  z-index: 1;
+  white-space: nowrap;
+  transform: translate(-50%, 0);
+}
+
+.goods__item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  background-size: 100%;
+}
+
+.goods__item:hover .btn-main {
+  display: block;
+}
+
 .goods__item--featured::before {
   content: '';
   position: absolute;
@@ -223,6 +242,7 @@ body {
 .goods__img {
   width: 267px;
   height: 267px;
+  margin-bottom: 19px;
   border-radius: 50%;
 }
 
@@ -239,6 +259,20 @@ body {
 
 .goods__kg {
   font-size: 3.0rem;
+}
+
+.goods__dscr {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.goods__dscr a {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.375;
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .advantages {
