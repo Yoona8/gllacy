@@ -208,23 +208,30 @@ body {
   vertical-align: top;
 }
 
+.goods__item:hover::after {
+  content: '';
+  position: absolute;
+  top: -6px;
+  bottom: -65px;
+  left: -9px;
+  right: -9px;
+  z-index: 1;
+  background-color: rgba(225, 225, 225, 0.3);
+  border-radius: 5px;
+}
+
 .goods__item .btn-main {
   position: absolute;
   display: none;
   top: 100%;
   left: 50%;
-  z-index: 1;
+  z-index: 2;
   white-space: nowrap;
   transform: translate(-50%, 0);
 }
 
-.goods__item:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  background-size: 100%;
-}
-
 .goods__item:hover .btn-main {
-  display: block;
+  display: inline-block;
 }
 
 .goods__item--featured::before {
@@ -232,6 +239,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 3;
   width: 61px;
   height: 61px;
   background-color: #ffffff;
@@ -240,6 +248,8 @@ body {
 }
 
 .goods__img {
+  position: relative;
+  z-index: 2;
   width: 267px;
   height: 267px;
   margin-bottom: 19px;
@@ -250,6 +260,7 @@ body {
   position: absolute;
   left: 0;
   top: 210px;
+  z-index: 3;
   margin: 0;
   font-weight: 700;
   font-size: 4.5rem;
@@ -262,6 +273,8 @@ body {
 }
 
 .goods__dscr {
+  position: relative;
+  z-index: 2;
   text-align: center;
   margin-bottom: 8px;
 }
@@ -273,6 +286,13 @@ body {
   text-decoration: none;
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.goods__item:not(:hover) .goods__item--featured::before,
+.goods__item:not(:hover) .goods__img,
+.goods__item:not(:hover) .goods__price,
+.goods__item:not(:hover) .goods__dscr {
+  z-index: 0;
 }
 
 .advantages {
