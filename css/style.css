@@ -87,7 +87,9 @@ body {
   max-width: 30%;
 }
 
-.footer__content {
+.social,
+.menu,
+.developer {
   float: left;
   width: 33%;
 }
@@ -261,6 +263,10 @@ body {
   right: 27px;
   width: 303px;
   background-color: #ffffff;
+}
+
+.footer {
+
 }
 
 /* Slider */
