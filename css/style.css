@@ -361,7 +361,6 @@ body {
   border-image: url('../img/bg/bg-border.png');
   border-image-slice: 10;
   border-image-width: 10px;
-  border-image-repeat: round;
   background-color: #f8f7f4;
 }
 
