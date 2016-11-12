@@ -388,9 +388,16 @@ body {
   position: absolute;
   top: 62px;
   right: 27px;
-  width: 303px;
+  width: 253px;
+  padding: 30px 25px;
+  border-radius: 12px;
   background-color: #ffffff;
 }
+
+.map__contacts .btn-main {
+  display: block;
+}
+
 
 .social {
   font-size: 0;
