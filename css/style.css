@@ -49,7 +49,7 @@ body {
 .btn {
   display: inline-block;
   padding: 8px 15px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.4rem;
   line-height: 1.143;
   text-decoration: none;
@@ -178,6 +178,7 @@ body {
   width: 526px;
   padding: 19px 17px;
   margin-left: 26px;
+  font-weight: 500;
   font-size: 1.8rem;
   line-height: 1.222;
   text-align: right;
@@ -330,6 +331,7 @@ body {
 
 .advantages__title {
   margin-top: 0;
+  font-weight: 500;
   font-size: 2.4rem;
 }
 
