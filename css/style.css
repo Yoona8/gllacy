@@ -312,7 +312,12 @@ body {
 }
 
 .advantages {
+  padding: 25px 20px;
   margin-bottom: 40px;
+  border-radius: 12px;
+  background: #eddec1;
+  background-image: url('../img/bg/bg-waffle.jpg');
+  background-repeat: repeat;
 }
 
 .map {
