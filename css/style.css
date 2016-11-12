@@ -248,6 +248,33 @@ body {
   height: 28px;
 }
 
+.header__content--right {
+  text-align: right;
+}
+
+.search__form {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.search__input {
+  display: none;
+}
+
+.btn--search {
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  background-image: url('../img/icons/sprite.png');
+  background-position: -431px -7px;
+  background-repeat: no-repeat;
+}
+
+.userbar {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .event,
 .news {
   margin-left: -26px;
