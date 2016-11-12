@@ -172,7 +172,7 @@ body {
 .nav__item:active {
   background-color: #f7f6f3;
   cursor: pointer;
-  box-shadow: inset 0px 2px 1px 0px #888888; 
+  box-shadow: inset 0px 2px 1px 0px #888888;
 }
 
 .nav__item:hover .nav__link {
@@ -232,6 +232,11 @@ body {
 
 .nav__sub-link:active {
   background-color: #f6b5a5;
+}
+
+.nav__sub-link:not([href]) {
+  background-color: #d07058;
+  color: #ffffff;
 }
 
 .nav__sub-list::before {
