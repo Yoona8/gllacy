@@ -51,6 +51,7 @@ body {
 .btn {
   display: inline-block;
   padding: 8px 15px;
+  margin-left: 10px;
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 1.143;
@@ -270,9 +271,61 @@ body {
   background-repeat: no-repeat;
 }
 
+.btn--search:hover {
+  background-color: #f8f7f4;
+  background-position: -521px -7px;
+  background-repeat: no-repeat;
+}
+
 .userbar {
   display: inline-block;
   vertical-align: middle;
+}
+
+.btn--login,
+.btn--cart-empty,
+.btn--cart-full {
+  position: relative;
+  padding-left: 44px;
+}
+
+.btn--cart-full {
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.btn--login::before,
+.btn--cart-empty::before,
+.btn--cart-full::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  width: 23px;
+  height: 23px;
+  background-image: url('../img/icons/sprite.png');
+  background-repeat: no-repeat;
+}
+
+.btn--login::before {
+  background-position: -385px -11px;
+}
+
+.btn--login:hover::before {
+  background-position: -578px -11px;
+}
+
+.btn--login:hover {
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.btn--cart-empty::before {
+  background-position: -225px -10px;
+}
+
+.btn--cart-full::before {
+  background-position: -277px -10px;
 }
 
 .event,
