@@ -186,6 +186,7 @@ body {
   list-style-type: none;
   border-radius: 6px;
   background-color: #f8f7f4;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .nav__sub-item--featured {
