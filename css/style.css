@@ -103,6 +103,10 @@ body {
   clear: both;
 }
 
+.header {
+  padding-top: 10px;
+}
+
 .header__content--left {
   float: left;
   max-width: 70%;
@@ -118,6 +122,10 @@ body {
 .developer {
   float: left;
   width: 33%;
+}
+
+.footer {
+  padding-bottom: 28px;
 }
 
 /* END: layout */
