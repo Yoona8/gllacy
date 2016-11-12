@@ -165,12 +165,22 @@ body {
 }
 
 .nav__item:hover {
-  background: #f7f6f3;
+  background-color: #f7f6f3;
   cursor: pointer;
+}
+
+.nav__item:active {
+  background-color: #f7f6f3;
+  cursor: pointer;
+  box-shadow: inset 0px 2px 1px 0px #888888; 
 }
 
 .nav__item:hover .nav__link {
   color: #333333;
+}
+
+.nav__item--current {
+  background-color: #d07058;
 }
 
 .nav__item:hover > .nav__sub-list {
