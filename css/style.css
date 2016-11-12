@@ -349,11 +349,15 @@ body {
 }
 
 .news__item--blog {
-  background-color: #ffffff;
   color: #000000;
+  background-color: #ffffff;
+  background-image: url('../img/bg/bg-strawberry.jpg');
+  background-position: 198px -40px;
+  background-repeat: no-repeat;
 }
 
 .news__item--subscription {
+  color: #000000;
   border-image: url('../img/bg/bg-border1.png');
   border-image-slice: 10;
   border-image-width: 10px;
