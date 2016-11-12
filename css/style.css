@@ -250,6 +250,7 @@ body {
 }
 
 .header__content--right {
+  position: relative;
   text-align: right;
 }
 
@@ -326,6 +327,26 @@ body {
 
 .btn--cart-full::before {
   background-position: -277px -10px;
+}
+
+.contacts {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 17px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.contacts__open {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 1.4rem;
+}
+
+.contacts__tel {
+  display: block;
+  font-size: 2.2rem;
 }
 
 .event,
