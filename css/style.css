@@ -358,7 +358,7 @@ body {
 
 .news__item--subscription {
   color: #000000;
-  border-image: url('../img/bg/bg-border1.png');
+  border-image: url('../img/bg/bg-border.png');
   border-image-slice: 10;
   border-image-width: 10px;
   border-image-repeat: round;
