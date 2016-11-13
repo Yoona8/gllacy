@@ -529,13 +529,22 @@ body {
   margin-bottom: 8px;
 }
 
-.goods__dscr a {
+.goods__dscr a,
+.menu__link {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.375;
   text-decoration: none;
   color: #ffffff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.goods__dscr a:hover,
+.menu__link:hover,
+.goods__dscr a:active,
+.menu__link:active {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
 .goods__item:not(:hover) .goods__item--featured::before,
@@ -752,6 +761,31 @@ body {
   border-color: rgba(255, 255, 255, 0.7);
   box-shadow: inset 0px 2px 1px 0px #888888;
   opacity: 0.9;
+}
+
+.menu__link {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 13px;
+  line-height: 1.385;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.menu__link--featured {
+  position: relative;
+  font-weight: 700;
+}
+
+.menu__link--featured::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -23px;
+  width: 17px;
+  height: 17px;
+  background-image: url('../img/icons/sprite.png');
+  background-position: -332px -17px;
 }
 
 /* Slider */
