@@ -153,16 +153,7 @@ body {
 .nav__item {
   position: relative;
   display: inline-block;
-  padding: 6px 14px 8px;
   border-radius: 20px;
-}
-
-.nav__link {
-  font-weight: 700;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  color: #ffffff;
-  vertical-align: middle;
 }
 
 .nav__item:hover {
@@ -170,18 +161,44 @@ body {
   cursor: pointer;
 }
 
-.nav__item:active {
-  background-color: #ededed;
-  cursor: pointer;
-  box-shadow: inset 0px 2px 1px 0px #888888;
+.nav__item--current {
+  background-color: #d07058;
+}
+
+.nav__link {
+  display: inline-block;
+  padding: 6px 14px 8px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 20px;
+  color: #ffffff;
+  vertical-align: middle;
 }
 
 .nav__item:hover .nav__link {
   color: #333333;
 }
 
-.nav__item--current {
-  background-color: #d07058;
+.nav__link-text {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav__item--current .nav__link-text {
+  border-bottom: none;
+}
+
+.nav__link:hover .nav__link-text {
+  border-bottom: none;
+}
+
+.nav__link:active .nav__link-text {
+  border-bottom: none;
+}
+
+.nav__link:active {
+  background-color: #ededed;
+  cursor: pointer;
+  box-shadow: inset 0px 2px 1px 0px #888888;
 }
 
 .nav__item:hover > .nav__sub-list {
