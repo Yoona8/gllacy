@@ -615,19 +615,57 @@ body {
 }
 
 .news__item--blog {
-  color: #000000;
+  color: #323232;
   background-color: #ffffff;
   background-image: url('../img/bg/bg-strawberry.jpg');
   background-position: 198px -40px;
   background-repeat: no-repeat;
 }
 
+.news__item--blog p {
+  margin: 0 0 8px;
+}
+
+.news__blog-title {
+  width: 315px;
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.25;
+}
+
+.news__blog-title a {
+  color: #323232;
+}
+
+.news__blog-title a:hover,
+.news__blog-title a:active {
+  color: #e84d37;
+}
+
 .news__item--subscription {
-  color: #000000;
+  font-weight: 400;
+  color: #5a5a5a;
   border-image: url('../img/bg/bg-border.png');
   border-image-slice: 10;
   border-image-width: 10px;
   background-color: #f8f7f4;
+}
+
+.news__item--subscription p {
+  margin: 0 0 10px;
+}
+
+.news__form {
+  margin-top: 30px;
+}
+
+.news__input {
+  width: 63%;
+  padding: 9px 14px;
+  margin-right: 11px;
+  border: 1px solid #d3d3d2;
+  border-radius: 6px;
 }
 
 .map {
