@@ -119,10 +119,24 @@ body {
 }
 
 .social,
-.menu,
-.developer {
+.menu {
   float: left;
-  width: 33%;
+}
+
+.developer {
+  float: right;
+}
+
+.social {
+  width: 38%;
+}
+
+.menu {
+  max-width: 37%;
+}
+
+.developer {
+  width: 25%;
 }
 
 .footer {
@@ -768,11 +782,26 @@ body {
 
 .menu__link {
   display: inline-block;
-  margin-left: 20px;
+  min-width: 140px;
   font-size: 13px;
   line-height: 1.385;
+  border: none;
   white-space: nowrap;
   vertical-align: middle;
+}
+
+.menu__link:hover,
+.menu__link:active {
+  border: none;
+}
+
+.menu__link-text {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu__link:hover .menu__link-text,
+.menu__link:active .menu__link-text {
+  border-color: rgba(255, 188, 158, 0.3);
 }
 
 .menu__link--featured {
