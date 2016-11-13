@@ -136,12 +136,13 @@ body {
   width: 154px;
   height: 64px;
   margin-right: 24px;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .nav {
   display: inline-block;
-  vertical-align: middle;
+  margin-top: 8px;
+  vertical-align: top;
 }
 
 .nav__list {
@@ -275,6 +276,7 @@ body {
 .search__form {
   position: relative;
   display: inline-block;
+  margin-top: 8px;
   vertical-align: middle;
 }
 
@@ -317,6 +319,7 @@ body {
 
 .userbar {
   display: inline-block;
+  margin-top: 8px;
   vertical-align: middle;
 }
 
