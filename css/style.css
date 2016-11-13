@@ -530,7 +530,8 @@ body {
 }
 
 .goods__dscr a,
-.menu__link {
+.menu__link,
+.developer__link {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.375;
@@ -541,8 +542,10 @@ body {
 
 .goods__dscr a:hover,
 .menu__link:hover,
+.developer__link:hover,
 .goods__dscr a:active,
-.menu__link:active {
+.menu__link:active,
+.developer__link:active {
   color: #ffbc9e;
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
@@ -786,6 +789,35 @@ body {
   height: 17px;
   background-image: url('../img/icons/sprite.png');
   background-position: -332px -17px;
+}
+
+.footer__content--right {
+  text-align: right;
+}
+
+.developer__text {
+  position: relative;
+  display: inline-block;
+  padding-top: 29px;
+  margin: 0;
+  text-align: right;
+  font-size: 1.2rem;
+  color: #fefefe;
+}
+
+.developer__text::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  width: 110px;
+  height: 40px;
+  background-image: url('../img/content/html-academy-logo.png');
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.developer__link {
+  font-size: 1.2rem;
 }
 
 /* Slider */
