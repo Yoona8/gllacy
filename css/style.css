@@ -690,10 +690,24 @@ body {
   background-color: #ffffff;
 }
 
+.map__text {
+  margin: 0 0 22px;
+}
+
+.map__text-small {
+  display: block;
+  font-size: 1.4rem;
+}
+
+.map__text-big {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+}
+
 .map__contacts .btn-main {
   display: block;
 }
-
 
 .social {
   font-size: 0;
