@@ -225,6 +225,7 @@ body {
   position: absolute;
   top: 120%;
   left: 0;
+  z-index: 10;
   display: none;
   padding: 7px 0 9px;
   list-style-type: none;
@@ -301,6 +302,7 @@ body {
   display: none;
   top: 120%;
   right: 0;
+  z-index: 10;
   padding: 20px 15px;
   border-radius: 6px;
   background-color: #f8f7f4;
