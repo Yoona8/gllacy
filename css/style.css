@@ -463,7 +463,7 @@ body {
 
 .goods {
   margin-left: -26px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   font-size: 0;
 }
 
@@ -472,6 +472,7 @@ body {
   display: inline-block;
   width: 267px;
   margin-left: 26px;
+  margin-bottom: 30px;
   vertical-align: top;
 }
 
