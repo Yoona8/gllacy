@@ -780,6 +780,57 @@ body {
   color: #ffffff;
 }
 
+.sorting__form {
+  margin-bottom: 33px;
+  font-size: 1.4rem;
+  line-height: 1.143;
+  color: #ffffff;
+}
+
+.sorting__item {
+  display: inline-block;
+  padding: 0;
+  margin: 0 17px 15px 0;
+  border: none;
+  vertical-align: bottom;
+}
+
+.sorting__title {
+  padding-left: 14px;
+  margin-bottom: 5px;
+}
+
+.sorting__select,
+.sorting__set {
+  padding: 8px 15px;
+  font-size: 1.6rem;
+  line-height: 1.125;
+  text-transform: lowercase;
+  border: none;
+  border-radius: 18px;
+  color: #ffffff;
+  background-color: rgba(248, 247, 244, 0.2);
+}
+
+.sorting__set {
+  padding: 10px 15px 9px 15px;
+}
+
+.sorting__set--slider {
+  padding: 0;
+  height: 37px;
+}
+
+.btn--sorting {
+  padding: 8px 28px 7px 28px;
+  margin: 0 0 15px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.125;
+  border: 2px solid #ffffff;
+  border-radius: 18px;
+}
+
 .social {
   font-size: 0;
 }
