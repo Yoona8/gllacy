@@ -106,6 +106,7 @@ body {
 
 .header {
   padding-top: 10px;
+  margin-bottom: 25px;
 }
 
 .header__content--left {
@@ -546,7 +547,8 @@ body {
 
 .goods__dscr a,
 .menu__link,
-.developer__link {
+.developer__link,
+.breadcrumbs__link {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.375;
@@ -558,9 +560,11 @@ body {
 .goods__dscr a:hover,
 .menu__link:hover,
 .developer__link:hover,
+.breadcrumbs__link:hover,
 .goods__dscr a:active,
 .menu__link:active,
-.developer__link:active {
+.developer__link:active,
+.breadcrumbs__link:active {
   color: #ffbc9e;
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
@@ -736,6 +740,39 @@ body {
   display: block;
 }
 
+.breadcrumbs {
+  margin-bottom: 8px;
+  max-width: 85%;
+}
+
+.breadcrumbs__link {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 1.4rem;
+}
+
+.breadcrumbs__link::after {
+  content: '»';
+  position: absolute;
+  left: 100%;
+  padding-left: 9px;
+  color: #ffffff;
+}
+
+.breadcrumbs__link:last-child::after {
+  display: none;
+}
+
+.breadcrumbs__link:not([href]) {
+  border: none;
+}
+
+.breadcrumbs__link:not([href]):hover,
+.breadcrumbs__link:not([href]):active {
+  color: #ffffff;
+}
+
 .social {
   font-size: 0;
 }
@@ -775,6 +812,7 @@ body {
   box-shadow: inset 3px 3px 3px 3px #ffffff;
   opacity: 1;
 }
+
 .social__link:active {
   border-color: rgba(255, 255, 255, 0.7);
   box-shadow: inset 0px 2px 1px 0px #888888;
