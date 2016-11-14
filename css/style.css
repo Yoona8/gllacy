@@ -824,9 +824,54 @@ body {
   padding: 10px 15px 9px 15px;
 }
 
-.sorting__set--slider {
-  padding: 0;
-  height: 37px;
+.sorting__set--range {
+  position: relative;
+  padding: 16px 15px 17px;
+  line-height: 0;
+}
+
+.sorting__range-scale {
+  position: relative;
+  display: inline-block;
+  height: 4px;
+  width: 188px;
+  background-color: rgba(248, 247, 244, 0.5);
+  vertical-align: middle;
+}
+
+.sorting__range-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 60px;
+  left: 30px;
+  height: 4px;
+  margin: auto;
+  background-color: rgba(248, 247, 244, 1);
+}
+
+.sorting__range-toggle {
+  position: absolute;
+  top: 7px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background-color: rgba(248, 247, 244, 1);
+  background-clip: content-box;
+}
+
+.sorting__range-toggle:hover {
+  background-clip: border-box;
+  cursor: pointer;
+}
+
+.sorting__range-toggle--min {
+  left: 30px;
+}
+
+.sorting__range-toggle--max {
+  right: 60px;
 }
 
 .btn--sorting {
