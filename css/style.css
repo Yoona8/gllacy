@@ -467,6 +467,10 @@ body {
   font-size: 0;
 }
 
+.goods--catalog {
+  margin-bottom: 45px;
+}
+
 .goods__item {
   position: relative;
   display: inline-block;
