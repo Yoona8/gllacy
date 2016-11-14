@@ -773,6 +773,13 @@ body {
   color: #ffffff;
 }
 
+.page-title {
+  margin: 0 0 30px;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #ffffff;
+}
+
 .social {
   font-size: 0;
 }
