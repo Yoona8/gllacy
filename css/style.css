@@ -549,11 +549,11 @@ body {
 .goods__dscr {
   position: relative;
   z-index: 2;
+  margin: 0 0 8px;
   text-align: center;
-  margin-bottom: 8px;
 }
 
-.goods__dscr a,
+.goods__dscr-link,
 .menu__link,
 .developer__link,
 .breadcrumbs__link {
@@ -565,11 +565,13 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.goods__dscr a:hover,
+.goods__item:hover .goods__dscr-link {
+  border-bottom: none;
+}
+
 .menu__link:hover,
 .developer__link:hover,
 .breadcrumbs__link:hover,
-.goods__dscr a:active,
 .menu__link:active,
 .developer__link:active,
 .breadcrumbs__link:active {
