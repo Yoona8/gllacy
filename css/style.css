@@ -828,6 +828,13 @@ body {
   border-radius: 18px;
   color: #ffffff;
   background-color: rgba(248, 247, 244, 0.2);
+  outline-color: transparent;
+}
+
+.sorting__select:hover,
+.sorting__select:focus {
+  color: #323232;
+  background-color: #ffffff;
 }
 
 .sorting__set {
