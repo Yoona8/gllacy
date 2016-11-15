@@ -891,6 +891,68 @@ body {
   right: 60px;
 }
 
+.sorting__input[type="radio"],
+.sorting__input[type="checkbox"] {
+  display: none;
+}
+
+.sorting__input[type="radio"] + .sorting__label,
+.sorting__input[type="checkbox"] + .sorting__label {
+  position: relative;
+  padding-left: 33px;
+  margin-right: 18px;
+}
+
+.sorting__input[type="radio"] + .sorting__label:last-child,
+.sorting__input[type="checkbox"] + .sorting__label:last-child {
+  margin-right: 0;
+}
+
+.sorting__input[type="radio"] + .sorting__label::before,
+.sorting__input[type="checkbox"] + .sorting__label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.sorting__input[type="radio"] + .sorting__label::before {
+  border-radius: 50%;
+}
+
+.sorting__input[type="radio"]:checked + .sorting__label::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.sorting__input[type="checkbox"] + .sorting__label::before {
+  border-radius: 3px;
+}
+
+.sorting__input[type="checkbox"]:checked + .sorting__label::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 14px;
+  height: 12px;
+  background-image: url('../img/icons/sprite.png');
+  background-position: -1062px -3px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
 .btn--sorting {
   padding: 8px 28px 7px 28px;
   margin: 0 0 15px;
