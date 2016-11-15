@@ -889,6 +889,52 @@ body {
   text-align: right;
 }
 
+.pagination__link {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 27px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 50%;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.pagination__link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination__link:not([href]) {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.pagination__link--prev,
+.pagination__link--next {
+  font-size: 0;
+  background-image: url('../img/icons/sprite.png');
+  background-position: -480px -12px;
+  background-repeat: no-repeat;
+}
+
+.pagination__link--prev:hover,
+.pagination__link--next:hover {
+  background-color: transparent;
+}
+
+.pagination__link--prev:not([href]),
+.pagination__link--next:not([href]) {
+  background-color: transparent;
+  opacity: 0.2;
+}
+
+.pagination__link--prev {
+  transform: rotate(180deg);
+}
+
 .footer--inner::before {
   content: '';
   position: absolute;
