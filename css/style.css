@@ -920,6 +920,13 @@ body {
   cursor: pointer;
 }
 
+.sorting__input[type="radio"] + .sorting__label:hover::before,
+.sorting__input[type="checkbox"] + .sorting__label:hover::before {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ffffff;
+}
+
 .sorting__input[type="radio"] + .sorting__label::before {
   border-radius: 50%;
 }
@@ -951,6 +958,21 @@ body {
   background-position: -1062px -3px;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.sorting__input[type="radio"]:disabled + .sorting__label::before,
+.sorting__input[type="radio"]:disabled + .sorting__label::after,
+.sorting__input[type="checkbox"]:disabled + .sorting__label::before,
+.sorting__input[type="checkbox"]:disabled + .sorting__label::after {
+  opacity: 0.4;
+  cursor: auto;
+}
+
+.sorting__input[type="radio"]:disabled + .sorting__label:hover::before,
+.sorting__input[type="checkbox"]:disabled + .sorting__label:hover::before {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ffffff;
 }
 
 .btn--sorting {
