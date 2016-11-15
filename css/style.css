@@ -173,8 +173,10 @@ body {
   border-radius: 20px;
 }
 
-.nav__item:hover {
+.nav__item:hover,
+.btn--sorting:hover {
   background-color: #f7f6f3;
+  color: #323232;
   cursor: pointer;
 }
 
@@ -193,7 +195,7 @@ body {
 }
 
 .nav__item:hover .nav__link {
-  color: #333333;
+  color: #323232;
 }
 
 .nav__link-text {
@@ -212,10 +214,16 @@ body {
   border-bottom: none;
 }
 
-.nav__link:active {
+.nav__link:active,
+.btn--sorting:active {
   background-color: #ededed;
   cursor: pointer;
   box-shadow: inset 0px 2px 1px 0px #888888;
+}
+
+.btn--sorting:active {
+  padding: 10px 30px 9px 30px;
+  border: none;
 }
 
 .nav__item:hover > .nav__sub-list {
@@ -879,11 +887,12 @@ body {
 .btn--sorting {
   padding: 8px 28px 7px 28px;
   margin: 0 0 15px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.6rem;
   line-height: 1.125;
   border: 2px solid #ffffff;
   border-radius: 18px;
+  outline-color: transparent;
 }
 
 .pagination {
