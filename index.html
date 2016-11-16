@@ -52,16 +52,48 @@
           <div class="header__content header__content--right">
             <form class="search__form" action="#" method="get">
               <div class="search__hover-wrapper">
-                <input class="search__input" type="search" name="search__input" placeholder="Что ищем?" required>
+                <input class="search__input" id="search-field" type="search" name="search" placeholder="Что ищем?" required>
                 <label class="search__label" for="search-field">Что ищем?</label>
               </div>
               <button class="btn btn--search" type="submit">Поиск</button>
             </form>
             <div class="userbar">
-              <a class="btn btn--login" href="#">Вход</a>
-              <div class="userbar__hover-wrapper"></div>
+              <a class="userbar__login-link" href="#">
+                <span class="btn btn--login">Вход</span>
+                <div class="userbar__hover-wrapper">
+                  <form class="userbar__login-form" action="#" method="post">
+                    <input class="userbar__input" id="login-field" type="text" name="login" placeholder="Электронная почта" required>
+                    <label class="userbar__label" for="login-field">Электронная почта</label>
+
+                    <input class="userbar__input" id="pass-field" type="password" name="pass" placeholder="Пароль" required>
+                    <label class="userbar__label" for="pass-field">Пароль</label>
+                    <button class="btn-main" type="submit">Войти</button>
+                  </form>
+                  <!-- Забыли пароль? -->
+                  <!-- Новая регистрация -->
+                </div>
+              </a>
               <a class="btn btn--cart-empty" href="#">Пусто</a>
-              <div class="userbar__hover-wrapper"></div>
+              <div class="userbar__hover-wrapper">
+                <table class="userbar__cart-content">
+                  <tr class="userbar__cart-item">
+                    <td class="userbar__cart-del">Закрыть</td>
+                    <td class="userbar__cart-pic"><img src="" alt=""></td>
+                    <td class="userbar__cart-name">Пломбир с апельсиновым джемом</td>
+                    <td class="userbar__cart-amount">1,5 кг х 200 руб.</td>
+                    <td class="userbar__cart-price">300 руб.</td>
+                  </tr>
+                  <tr class="userbar__cart-item">
+                    <td class="userbar__cart-del">Закрыть</td>
+                    <td class="userbar__cart-pic"><img src="" alt=""></td>
+                    <td class="userbar__cart-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td class="userbar__cart-amount">1,5 кг х 300 руб.</td>
+                    <td class="userbar__cart-price">450 руб.</td>
+                  </tr>
+                </table>
+                <div class="userbar__cart-summ">Итого: 750 руб.</div>
+                <a class="btn-main">Оформить заказ</a>
+              </div>
             </div>
             <div class="contacts">
               <span class="contacts__open">С 10 до 20, ежедневно</span>
