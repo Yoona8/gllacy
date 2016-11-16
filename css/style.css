@@ -98,7 +98,7 @@ body {
 
 .nav__sub-list::before,
 .search__hover-wrapper::before,
-.userbar__login-form::before {
+.userbar__hover-wrapper::before {
   content: '';
   position: absolute;
   top: -15px;
@@ -168,20 +168,20 @@ body {
 }
 
 .btn--login,
-.btn--cart-empty,
-.btn--cart-full {
+.userbar__cart-block--empty .btn,
+.userbar__cart-block--full .btn {
   position: relative;
   padding-left: 44px;
 }
 
-.btn--cart-full {
+.userbar__cart-block--full .btn {
   color: #323232;
   background-color: #f8f7f4;
 }
 
 .btn--login::before,
-.btn--cart-empty::before,
-.btn--cart-full::before {
+.userbar__cart-block--empty .btn::before,
+.userbar__cart-block--full .btn::before {
   content: '';
   position: absolute;
   top: 4px;
@@ -196,20 +196,20 @@ body {
   background-position: -385px -11px;
 }
 
-.userbar__login-link:hover .btn--login::before {
+.userbar__login-block:hover .btn--login::before {
   background-position: -578px -11px;
 }
 
-.userbar__login-link:hover .btn--login {
+.userbar__login-block:hover .btn--login {
   color: #323232;
   background-color: #f8f7f4;
 }
 
-.btn--cart-empty::before {
+.userbar__cart-block--empty .btn::before {
   background-position: -225px -10px;
 }
 
-.btn--cart-full::before {
+.userbar__cart-block--full .btn::before {
   background-position: -277px -10px;
 }
 
@@ -523,12 +523,14 @@ body {
   vertical-align: middle;
 }
 
-.userbar__login-link {
+.userbar__login-block,
+.userbar__cart-block {
   position: relative;
   display: inline-block;
 }
 
-.userbar__login-link:hover .userbar__hover-wrapper {
+.userbar__login-block:hover .userbar__hover-wrapper,
+.userbar__cart-block--full:hover .userbar__hover-wrapper {
   display: block;
 }
 
