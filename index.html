@@ -52,7 +52,8 @@
           <div class="header__content header__content--right">
             <form class="search__form" action="#" method="get">
               <div class="search__hover-wrapper">
-                <input class="search__input" type="search" name="search__input" placeholder="Что ищем?">
+                <input class="search__input" type="search" name="search__input" placeholder="Что ищем?" required>
+                <label class="search__label" for="search-field">Что ищем?</label>
               </div>
               <button class="btn btn--search" type="submit">Поиск</button>
             </form>
@@ -159,7 +160,8 @@
                 Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
               </p>
               <form class="news__form" action="#" method="post">
-                <input class="news__input" type="text" name="news__input" placeholder="Электронная почта">
+                <input class="news__input" id="subscribtion-field" type="text" name="news__input" placeholder="Электронная почта" required>
+                <label class="news__label" for="subscribtion-field">Электронная почта</label>
                 <button class="btn-main" type="submit">Отправить</button>
               </form>
             </div>
