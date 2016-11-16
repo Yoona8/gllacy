@@ -80,11 +80,22 @@ body {
   cursor: pointer;
 }
 
+.btn-main:hover {
+  background-image: linear-gradient(#f58669 0%, #ec6f5e 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 1);
+}
+
+.btn-main:active {
+  background-image: linear-gradient(#d74632 0%, #e1613e 100%);
+  box-shadow: inset 0px 2px 2px 0px #942718;
+}
+
 .btn-main--big {
   padding: 10px 40px 12px;
   font-size: 3.2rem;
   line-height: 1.375;
   border-radius: 33px;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
 
 /* END: global styles */
