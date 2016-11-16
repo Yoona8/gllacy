@@ -132,6 +132,33 @@ body {
   color: transparent;
 }
 
+.search__label,
+.news__label {
+  position: absolute;
+  top: 6px;
+  left: 29px;
+  display: none;
+  font-size: 1.1rem;
+  line-height: 1.182;
+  color: #999999;
+}
+
+.news__label {
+  top: -15px;
+  left: 14px;
+}
+
+.news__input:focus + .news__label,
+.search__input:focus + .search__label {
+  color: #5b9ddf;
+  display: block;
+}
+
+.news__input:valid + .news__label,
+.search__input:valid + .search__label {
+  display: block;
+}
+
 /* END: global styles */
 
 /* layout */
@@ -749,6 +776,7 @@ body {
 }
 
 .news__form {
+  position: relative;
   margin-top: 30px;
 }
 
