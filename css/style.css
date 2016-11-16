@@ -1,9 +1,3 @@
-/* h2 - слайдер
-   h3 - акции
-   h4 - преимущества, новости в блоге
-   h5 - каталог
-*/
-
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/roboto.woff') format('woff'),
@@ -99,7 +93,8 @@ body {
 }
 
 .news__input,
-.search__input {
+.search__input,
+.userbar__input {
   padding: 9px 14px;
   font-weight: bold;
   font-size: 1.6rem;
@@ -111,29 +106,34 @@ body {
 }
 
 .news__input:hover,
-.search__input:hover {
+.search__input:hover,
+.userbar__input:hover {
   padding: 8px 13px;
   border: 2px solid #d3d3d2;
 }
 
 .news__input:focus,
-.search__input:focus {
+.search__input:focus,
+.userbar__input:focus {
   padding: 8px 13px;
   border: 2px solid #8fbdec;
 }
 
 .news__input::-webkit-input-placeholder,
-.search__input::-webkit-input-placeholder {
+.search__input::-webkit-input-placeholder,
+.userbar__input::-webkit-input-placeholder {
   font-weight: 400;
 }
 
 .news__input:focus::-webkit-input-placeholder,
-.search__input:focus::-webkit-input-placeholder {
+.search__input:focus::-webkit-input-placeholder,
+.userbar__input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
 .search__label,
-.news__label {
+.news__label,
+.userbar__label {
   position: absolute;
   top: 6px;
   left: 29px;
@@ -149,14 +149,24 @@ body {
 }
 
 .news__input:focus + .news__label,
-.search__input:focus + .search__label {
+.search__input:focus + .search__label,
+.userbar__input:focus + .userbar__label {
   color: #5b9ddf;
   display: block;
 }
 
 .news__input:valid + .news__label,
-.search__input:valid + .search__label {
+.search__input:valid + .search__label,
+.userbar__input:valid + .userbar__label {
   display: block;
+}
+
+.userbar__input[id="login-field"] {
+  margin-bottom: 20px;
+}
+
+.userbar__label[for="pass-field"] {
+  top: 69px;
 }
 
 /* END: global styles */
@@ -356,7 +366,8 @@ body {
 }
 
 .nav__sub-list::before,
-.search__hover-wrapper::before {
+.search__hover-wrapper::before,
+.userbar__login-form::before {
   content: '';
   position: absolute;
   top: -15px;
@@ -448,13 +459,22 @@ body {
   background-position: -385px -11px;
 }
 
-.btn--login:hover::before {
+.userbar__login-link {
+  position: relative;
+  display: inline-block;
+}
+
+.userbar__login-link:hover .btn--login::before {
   background-position: -578px -11px;
 }
 
-.btn--login:hover {
+.userbar__login-link:hover .btn--login {
   color: #323232;
   background-color: #f8f7f4;
+}
+
+.userbar__login-link:hover .userbar__hover-wrapper {
+  display: block;
 }
 
 .btn--cart-empty::before {
