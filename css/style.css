@@ -275,6 +275,18 @@ body {
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
+.news__blog-title a,
+.userbar__reg-link {
+  color: #323232;
+}
+
+.news__blog-title a:hover,
+.news__blog-title a:active,
+.userbar__reg-link:hover,
+.userbar__reg-link:active {
+  color: #e84d37;
+}
+
 
 /* hover and modal forms */
 
@@ -375,8 +387,33 @@ body {
   display: block;
 }
 
+.userbar__login-form {
+  min-width: 240px;
+}
+
 .userbar__login-form .userbar__input {
+  width: 100%;
   margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.userbar__login-form .btn-main {
+  float: left;
+  max-width: 50%;
+}
+
+.userbar__registration {
+  display: inline-block;
+  margin-left: 15px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.userbar__reg-link {
+  display: block;
+  font-size: 1.3rem;
+  line-height: 1.85;
+  color: #323232;
 }
 
 .userbar__label[for="pass-field"] {
@@ -857,15 +894,6 @@ body {
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 1.25;
-}
-
-.news__blog-title a {
-  color: #323232;
-}
-
-.news__blog-title a:hover,
-.news__blog-title a:active {
-  color: #e84d37;
 }
 
 .news__item--subscription {
