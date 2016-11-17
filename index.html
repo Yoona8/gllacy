@@ -6,6 +6,7 @@
     <title>Глейси</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=tr_TR" type="text/javascript"></script>
   </head>
   <body>
     <input class="slider__radio" type="radio" id="radio-one" name="slider__radio" value="radio-one" checked>
@@ -183,7 +184,7 @@
             </div>
           </section>
         </div>
-        <section class="map">
+        <section id="yandex-map" class="map">
           <div class="container">
             <div class="map__contacts">
               <p class="map__text">
@@ -236,5 +237,6 @@
         </div>
       </footer>
     </div>
+    <script src="./js/map.js"></script>
   </body>
 </html>

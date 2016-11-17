@@ -1018,6 +1018,7 @@ body {
 }
 
 .map {
+  position: relative;
   width: 100%;
   height: 430px;
   margin: 0 auto;
@@ -1025,7 +1026,9 @@ body {
 }
 
 .map .container {
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
   height: 100%;
 }
 
@@ -1033,6 +1036,7 @@ body {
   position: absolute;
   top: 62px;
   right: 27px;
+  z-index: 1;
   width: 253px;
   padding: 30px 25px;
   border-radius: 12px;
