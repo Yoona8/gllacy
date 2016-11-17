@@ -55,10 +55,46 @@
               <button class="btn btn--search" type="submit">Поиск</button>
             </form>
             <div class="userbar">
-              <a class="btn btn--login" href="#">Вход</a>
-              <div class="userbar__hover-wrapper"></div>
-              <a class="btn btn--cart-full" href="#">Корзина</a>
-              <div class="userbar__hover-wrapper"></div>
+              <div class="userbar__login-block">
+                <a class="btn btn--login" href="#">Вход</a>
+                <div class="userbar__hover-wrapper">
+                  <form class="userbar__login-form clearfix" action="#" method="post">
+                    <input class="userbar__input" id="login-field" type="text" name="login" placeholder="Электронная почта" required>
+                    <label class="userbar__label" for="login-field">Электронная почта</label>
+
+                    <input class="userbar__input" id="pass-field" type="password" name="pass" placeholder="Пароль" required>
+                    <label class="userbar__label" for="pass-field">Пароль</label>
+                    <button class="btn-main" type="submit">Войти</button>
+                    <div class="userbar__registration">
+                      <a class="userbar__reg-link" href="#">Забыли пароль?</a>
+                      <a class="userbar__reg-link" href="#">Новая регистрация</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="userbar__cart-block userbar__cart-block--full">
+                <a class="btn">2 товара</a>
+                <div class="userbar__hover-wrapper">
+                  <table class="userbar__cart-content">
+                    <tr class="userbar__cart-item">
+                      <td class="userbar__cart-del">Удалить</td>
+                      <td class="userbar__cart-pic"><img src="./img/content/icecream-1.jpg" width="34" height="34" alt="Апельсиновое"></td>
+                      <td class="userbar__cart-name">Пломбир с апельсиновым джемом</td>
+                      <td class="userbar__cart-amount">1,5 кг х <span class="userbar__cart-item-price">200 руб.</span></td>
+                      <td class="userbar__cart-price">300 руб.</td>
+                    </tr>
+                    <tr class="userbar__cart-item">
+                      <td class="userbar__cart-del">Удалить</td>
+                      <td class="userbar__cart-pic"><img src="./img/content/icecream-3.jpg" width="34" height="34" alt="Клубничное"></td>
+                      <td class="userbar__cart-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                      <td class="userbar__cart-amount">1,5 кг х <span class="userbar__cart-item-price">300 руб.</span></td>
+                      <td class="userbar__cart-price">450 руб.</td>
+                    </tr>
+                  </table>
+                  <div class="userbar__cart-summ">Итого: 750 руб.</div>
+                  <a class="btn-main">Оформить заказ</a>
+                </div>
+              </div>
             </div>
             <div class="contacts">
               <span class="contacts__open">С 10 до 20, ежедневно</span>
