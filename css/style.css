@@ -396,8 +396,8 @@ body {
   left: 1px;
   width: 23px;
   height: 2px;
-  margin: auto;
   background-color: #000000;
+  border-radius: 1px;
 }
 
 .map__form-close::before {
@@ -683,6 +683,7 @@ body {
   height: 1px;
   margin-top: -2px;
   background-color: #323232;
+  border-radius: 1px;
 }
 
 .userbar__cart-del::before {
