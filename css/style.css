@@ -576,8 +576,19 @@ body {
   max-width: 540px;
 }
 
+.userbar__cart-content {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #cacac7;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 15px;
+}
+
 .userbar__cart-content td {
-  padding-right: 15px;
+  padding: 12px 15px 12px 0;
+  border: 0;
 }
 
 .userbar__cart-del {
@@ -591,11 +602,13 @@ body {
 .userbar__cart-del::after {
   content: '';
   position: absolute;
-  top: 17px;
+  top: 50%;
   left: 0;
   width: 14px;
   height: 1px;
+  margin-top: -2px;
   background-color: #323232;
+  transform: translate(-50%, 0);
 }
 
 .userbar__cart-del::before {
@@ -632,6 +645,17 @@ body {
 .userbar__cart-price {
   text-align: center;
   white-space: nowrap;
+}
+
+.userbar__cart-item-price {
+  color: #999999;
+}
+
+.userbar__cart-summ {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 15px;
 }
 
 .contacts {
