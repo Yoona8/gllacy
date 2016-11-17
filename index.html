@@ -51,7 +51,7 @@
           </div>
           <div class="header__content header__content--right">
             <form class="search__form" action="#" method="get">
-              <div class="search__hover-wrapper">
+              <div class="hover-wrapper">
                 <input class="search__input" id="search-field" type="search" name="search" placeholder="Что ищем?" required>
                 <label class="search__label" for="search-field">Что ищем?</label>
               </div>
@@ -60,7 +60,7 @@
             <div class="userbar">
               <div class="userbar__login-block">
                 <a class="btn btn--login" href="#">Вход</a>
-                <div class="userbar__hover-wrapper">
+                <div class="hover-wrapper">
                   <form class="userbar__login-form clearfix" action="#" method="post">
                     <input class="userbar__input" id="login-field" type="text" name="login" placeholder="Электронная почта" required>
                     <label class="userbar__label" for="login-field">Электронная почта</label>
@@ -196,6 +196,17 @@
                 <span class="map__text-small">(с 10 до 20 ежедневно)</span>
               </p>
               <a class="btn-main" href="#">Форма обратной связи</a>
+              <form class="modal-wrapper">
+                <input class="map__modal-input" id="name" type="text" name="name" placeholder="Как вас зовут?" required>
+                <label class="map__modal-label" for="name">Как вас зовут?</label>
+
+                <input class="map__modal-input" id="email-for-feedback" type="text" name="email-for-feedback" placeholder="Ваша почта для ответа" required>
+                <label class="map__modal-label" for="email-for-feedback">Ваша почта для ответа</label>
+
+                <textarea class="map__modal-input" id="comment" name="comment" rows="6" placeholder="Напишите что-нибудь..." required></textarea>
+                <label class="map__modal-label" for="comment">Напишите что-нибудь...</label>
+                <button class="btn-main" type="submit">Отправить</button>
+              </form>
             </div>
           </div>
         </section>

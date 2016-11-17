@@ -82,6 +82,7 @@ body {
 
 .developer {
   float: right;
+  width: 25%;
 }
 
 .social {
@@ -92,13 +93,8 @@ body {
   max-width: 37%;
 }
 
-.developer {
-  width: 25%;
-}
-
 .nav__sub-list::before,
-.search__hover-wrapper::before,
-.userbar__hover-wrapper::before {
+.hover-wrapper::before {
   content: '';
   position: absolute;
   top: -15px;
@@ -295,8 +291,8 @@ body {
   vertical-align: middle;
 }
 
-.search__hover-wrapper,
-.userbar__hover-wrapper {
+.hover-wrapper,
+.modal-wrapper {
   position: absolute;
   display: none;
   top: 120%;
@@ -308,13 +304,24 @@ body {
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
-.search__form:hover .search__hover-wrapper {
+.search__form:hover .hover-wrapper {
   display: block;
+}
+
+.modal-wrapper {
+  position: fixed;
+  display: block;
+  top: 337px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 427px;
 }
 
 .news__input,
 .search__input,
-.userbar__input {
+.userbar__input,
+.map__modal-input {
   padding: 9px 14px;
   font-weight: bold;
   font-size: 1.6rem;
@@ -331,33 +338,38 @@ body {
 
 .news__input:hover,
 .search__input:hover,
-.userbar__input:hover {
+.userbar__input:hover,
+.map__modal-input:hover {
   padding: 8px 13px;
   border: 2px solid #d3d3d2;
 }
 
 .news__input:focus,
 .search__input:focus,
-.userbar__input:focus {
+.userbar__input:focus,
+.map__modal-input:focus {
   padding: 8px 13px;
   border: 2px solid #8fbdec;
 }
 
 .news__input::-webkit-input-placeholder,
 .search__input::-webkit-input-placeholder,
-.userbar__input::-webkit-input-placeholder {
+.userbar__input::-webkit-input-placeholder,
+.map__modal-input::-webkit-input-placeholder {
   font-weight: 400;
 }
 
 .news__input:focus::-webkit-input-placeholder,
 .search__input:focus::-webkit-input-placeholder,
-.userbar__input:focus::-webkit-input-placeholder {
+.userbar__input:focus::-webkit-input-placeholder,
+.map__modal-input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
 .search__label,
 .news__label,
-.userbar__label {
+.userbar__label,
+.map__modal-label {
   position: absolute;
   top: 6px;
   left: 29px;
@@ -374,7 +386,8 @@ body {
 
 .news__input:focus + .news__label,
 .search__input:focus + .search__label,
-.userbar__input:focus + .userbar__label {
+.userbar__input:focus + .userbar__label,
+.map__modal-input:focus + .map__modal-label {
   color: #5b9ddf;
   display: block;
 }
@@ -564,12 +577,12 @@ body {
   display: inline-block;
 }
 
-.userbar__login-block:hover .userbar__hover-wrapper,
-.userbar__cart-block--full:hover .userbar__hover-wrapper {
+.userbar__login-block:hover .hover-wrapper,
+.userbar__cart-block--full:hover .hover-wrapper {
   display: block;
 }
 
-.userbar__cart-block--full .userbar__hover-wrapper {
+.userbar__cart-block--full .hover-wrapper {
   min-width: 500px;
   max-width: 540px;
 }
