@@ -314,8 +314,19 @@ body {
   top: 337px;
   right: 0;
   left: 0;
+  z-index: 12;
   margin: 0 auto;
   width: 427px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 11;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .input {
@@ -331,6 +342,62 @@ body {
 
 .search__form .input {
   width: 311px;
+}
+
+.map__form-text {
+  margin: 0 0 15px;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.167;
+}
+
+.map__form .input[type="text"] {
+  width: 265px;
+  margin-bottom: 20px;
+}
+
+.map__form textarea {
+  width: 100%;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.map__form .btn-main {
+  float: right;
+}
+
+.map__form-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.map__form-close::before,
+.map__form-close::after {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 1px;
+  width: 23px;
+  height: 2px;
+  margin: auto;
+  background-color: #000000;
+}
+
+.map__form-close::before {
+  transform: rotate(45deg);
+}
+
+.map__form-close::after {
+  transform: rotate(-45deg);
 }
 
 .input:hover {
@@ -351,10 +418,7 @@ body {
   color: transparent;
 }
 
-.search__label,
-.news__label,
-.userbar__label,
-.map__modal-label {
+.label {
   position: absolute;
   top: 6px;
   left: 29px;
@@ -364,22 +428,29 @@ body {
   color: #999999;
 }
 
-.news__label {
+.news__form .label {
   top: -15px;
   left: 14px;
 }
 
-.input:focus + .news__label,
-.input:focus + .search__label,
-.input:focus + .userbar__label,
-.input:focus + .map__modal-label {
+.map__form .label[for="name"] {
+  top: 49px;
+}
+
+.map__form .label[for="email-for-feedback"] {
+  top: 112px;
+}
+
+.map__form .label[for="comment"] {
+  top: 176px;
+}
+
+.input:focus + .label {
   color: #5b9ddf;
   display: block;
 }
 
-.input:valid + .news__label,
-.input:valid + .search__label,
-.input:valid + .userbar__label {
+.input:valid + .label {
   display: block;
 }
 
@@ -412,7 +483,7 @@ body {
   color: #323232;
 }
 
-.userbar__label[for="pass-field"] {
+.userbar__login-form .label[for="pass-field"] {
   top: 69px;
 }
 
@@ -604,7 +675,6 @@ body {
   height: 1px;
   margin-top: -2px;
   background-color: #323232;
-  transform: translate(-50%, 0);
 }
 
 .userbar__cart-del::before {
