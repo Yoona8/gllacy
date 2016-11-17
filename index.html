@@ -52,7 +52,7 @@
           <div class="header__content header__content--right">
             <form class="search__form" action="#" method="get">
               <div class="hover-wrapper">
-                <input class="search__input" id="search-field" type="search" name="search" placeholder="Что ищем?" required>
+                <input class="input" id="search-field" type="search" name="search" placeholder="Что ищем?" required>
                 <label class="search__label" for="search-field">Что ищем?</label>
               </div>
               <button class="btn btn--search" type="submit">Поиск</button>
@@ -62,10 +62,10 @@
                 <a class="btn btn--login" href="#">Вход</a>
                 <div class="hover-wrapper">
                   <form class="userbar__login-form clearfix" action="#" method="post">
-                    <input class="userbar__input" id="login-field" type="text" name="login" placeholder="Электронная почта" required>
+                    <input class="input" id="login-field" type="text" name="login" placeholder="Электронная почта" required>
                     <label class="userbar__label" for="login-field">Электронная почта</label>
 
-                    <input class="userbar__input" id="pass-field" type="password" name="pass" placeholder="Пароль" required>
+                    <input class="input" id="pass-field" type="password" name="pass" placeholder="Пароль" required>
                     <label class="userbar__label" for="pass-field">Пароль</label>
                     <button class="btn-main" type="submit">Войти</button>
                     <div class="userbar__registration">
@@ -176,7 +176,7 @@
                 Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
               </p>
               <form class="news__form" action="#" method="post">
-                <input class="news__input" id="subscribtion-field" type="text" name="news__input" placeholder="Электронная почта" required>
+                <input class="input" id="subscribtion-field" type="text" name="subscription-mail" placeholder="Электронная почта" required>
                 <label class="news__label" for="subscribtion-field">Электронная почта</label>
                 <button class="btn-main" type="submit">Отправить</button>
               </form>
@@ -196,14 +196,14 @@
                 <span class="map__text-small">(с 10 до 20 ежедневно)</span>
               </p>
               <a class="btn-main" href="#">Форма обратной связи</a>
-              <form class="modal-wrapper">
-                <input class="map__modal-input" id="name" type="text" name="name" placeholder="Как вас зовут?" required>
+              <form class="modal-wrapper" action="#" method="post">
+                <input class="input" id="name" type="text" name="name" placeholder="Как вас зовут?" required>
                 <label class="map__modal-label" for="name">Как вас зовут?</label>
 
-                <input class="map__modal-input" id="email-for-feedback" type="text" name="email-for-feedback" placeholder="Ваша почта для ответа" required>
+                <input class="input" id="email-for-feedback" type="text" name="email-for-feedback" placeholder="Ваша почта для ответа" required>
                 <label class="map__modal-label" for="email-for-feedback">Ваша почта для ответа</label>
 
-                <textarea class="map__modal-input" id="comment" name="comment" rows="6" placeholder="Напишите что-нибудь..." required></textarea>
+                <textarea class="input" id="comment" name="comment" rows="6" placeholder="Напишите что-нибудь..." required></textarea>
                 <label class="map__modal-label" for="comment">Напишите что-нибудь...</label>
                 <button class="btn-main" type="submit">Отправить</button>
               </form>

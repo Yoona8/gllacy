@@ -318,10 +318,7 @@ body {
   width: 427px;
 }
 
-.news__input,
-.search__input,
-.userbar__input,
-.map__modal-input {
+.input {
   padding: 9px 14px;
   font-weight: bold;
   font-size: 1.6rem;
@@ -332,37 +329,25 @@ body {
   outline-color: transparent;
 }
 
-.search__input {
+.search__form .input {
   width: 311px;
 }
 
-.news__input:hover,
-.search__input:hover,
-.userbar__input:hover,
-.map__modal-input:hover {
+.input:hover {
   padding: 8px 13px;
   border: 2px solid #d3d3d2;
 }
 
-.news__input:focus,
-.search__input:focus,
-.userbar__input:focus,
-.map__modal-input:focus {
+.input:focus {
   padding: 8px 13px;
   border: 2px solid #8fbdec;
 }
 
-.news__input::-webkit-input-placeholder,
-.search__input::-webkit-input-placeholder,
-.userbar__input::-webkit-input-placeholder,
-.map__modal-input::-webkit-input-placeholder {
+.input::-webkit-input-placeholder {
   font-weight: 400;
 }
 
-.news__input:focus::-webkit-input-placeholder,
-.search__input:focus::-webkit-input-placeholder,
-.userbar__input:focus::-webkit-input-placeholder,
-.map__modal-input:focus::-webkit-input-placeholder {
+.input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
@@ -384,17 +369,17 @@ body {
   left: 14px;
 }
 
-.news__input:focus + .news__label,
-.search__input:focus + .search__label,
-.userbar__input:focus + .userbar__label,
-.map__modal-input:focus + .map__modal-label {
+.input:focus + .news__label,
+.input:focus + .search__label,
+.input:focus + .userbar__label,
+.input:focus + .map__modal-label {
   color: #5b9ddf;
   display: block;
 }
 
-.news__input:valid + .news__label,
-.search__input:valid + .search__label,
-.userbar__input:valid + .userbar__label {
+.input:valid + .news__label,
+.input:valid + .search__label,
+.input:valid + .userbar__label {
   display: block;
 }
 
@@ -402,7 +387,7 @@ body {
   min-width: 240px;
 }
 
-.userbar__login-form .userbar__input {
+.userbar__login-form .input {
   width: 100%;
   margin-bottom: 20px;
   box-sizing: border-box;
@@ -949,7 +934,7 @@ body {
   margin-top: 30px;
 }
 
-.news__input {
+.news__form .input {
   width: 63%;
   margin-right: 11px;
 }
