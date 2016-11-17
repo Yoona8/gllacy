@@ -310,7 +310,6 @@ body {
 
 .modal-wrapper {
   position: fixed;
-  display: block;
   top: 337px;
   right: 0;
   left: 0;
@@ -321,12 +320,17 @@ body {
 
 .modal-overlay {
   position: fixed;
+  display: none;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   z-index: 11;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-overlay--active {
+  display: block;
 }
 
 .input {
@@ -342,6 +346,10 @@ body {
 
 .search__form .input {
   width: 311px;
+}
+
+.map__form--open {
+  display: block;
 }
 
 .map__form-text {
