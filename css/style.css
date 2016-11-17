@@ -168,8 +168,7 @@ body {
 }
 
 .btn--login,
-.userbar__cart-block--empty .btn,
-.userbar__cart-block--full .btn {
+.userbar__cart-block .btn {
   position: relative;
   padding-left: 44px;
 }
@@ -180,8 +179,7 @@ body {
 }
 
 .btn--login::before,
-.userbar__cart-block--empty .btn::before,
-.userbar__cart-block--full .btn::before {
+.userbar__cart-block .btn::before {
   content: '';
   position: absolute;
   top: 4px;
