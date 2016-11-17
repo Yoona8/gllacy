@@ -375,7 +375,7 @@ body {
   display: block;
 }
 
-.userbar__input[id="login-field"] {
+.userbar__login-form .userbar__input {
   margin-bottom: 20px;
 }
 
@@ -532,6 +532,69 @@ body {
 .userbar__login-block:hover .userbar__hover-wrapper,
 .userbar__cart-block--full:hover .userbar__hover-wrapper {
   display: block;
+}
+
+.userbar__cart-block--full .userbar__hover-wrapper {
+  min-width: 500px;
+  max-width: 540px;
+}
+
+.userbar__cart-content td {
+  padding-right: 15px;
+}
+
+.userbar__cart-del {
+  position: relative;
+  width: 11px;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.userbar__cart-del::before,
+.userbar__cart-del::after {
+  content: '';
+  position: absolute;
+  top: 17px;
+  left: 0;
+  width: 14px;
+  height: 1px;
+  background-color: #323232;
+}
+
+.userbar__cart-del::before {
+  transform: rotate(45deg);
+}
+
+.userbar__cart-del::after {
+  transform: rotate(-45deg);
+}
+
+.userbar__cart-pic {
+  width: 34px;
+}
+
+.userbar__cart-pic img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.userbar__cart-name,
+.userbar__cart-amount,
+.userbar__cart-price {
+  font-size: 1.3rem;
+  line-height: 1.23;
+}
+
+.userbar__cart-name {
+  width: 240px;
+  text-align: left;
+}
+
+.userbar__cart-amount,
+.userbar__cart-price {
+  text-align: center;
+  white-space: nowrap;
 }
 
 .contacts {
