@@ -422,7 +422,31 @@ body {
   font-weight: 400;
 }
 
+.input:-moz-placeholder {
+  font-weight: 400;
+}
+
+.input::-moz-placeholder {
+  font-weight: 400;
+}
+
+.input:-ms-input-placeholder {
+  font-weight: 400;
+}
+
 .input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.input:focus:-ms-input-placeholder {
   color: transparent;
 }
 
