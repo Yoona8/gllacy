@@ -830,7 +830,7 @@ body {
 
 .goods {
   margin-left: -26px;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   font-size: 0;
 }
 
@@ -842,7 +842,7 @@ body {
   position: relative;
   display: inline-block;
   width: 267px;
-  margin: 0 0 21px 26px;
+  margin: 0 0 29px 26px;
   vertical-align: top;
 }
 
@@ -1089,7 +1089,6 @@ body {
 }
 
 .breadcrumbs {
-  margin-bottom: 8px;
   max-width: 85%;
 }
 
@@ -1126,11 +1125,12 @@ body {
   margin: 0 0 30px;
   font-weight: 700;
   font-size: 3.5rem;
+  line-height: 1.1;
   color: #ffffff;
 }
 
 .sorting__form {
-  margin-bottom: 33px;
+  margin-bottom: 26px;
   font-size: 1.4rem;
   line-height: 1.143;
   color: #ffffff;
@@ -1139,7 +1139,7 @@ body {
 .sorting__item {
   display: inline-block;
   padding: 0;
-  margin: 0 17px 15px 0;
+  margin: 0 12px 15px 0;
   border: none;
   vertical-align: bottom;
 }
@@ -1234,6 +1234,10 @@ body {
   margin-right: 18px;
 }
 
+.sorting__input[type="radio"] + .sorting__label {
+  margin-right: 12px;
+}
+
 .sorting__input[type="radio"] + .sorting__label:last-child,
 .sorting__input[type="checkbox"] + .sorting__label:last-child {
   margin-right: 0;
@@ -1313,11 +1317,11 @@ body {
 
 .pagination__link {
   display: inline-block;
-  width: 27px;
-  height: 27px;
+  width: 24px;
+  height: 24px;
   font-weight: 500;
   font-size: 1.6rem;
-  line-height: 27px;
+  line-height: 24px;
   text-decoration: none;
   text-align: center;
   border-radius: 50%;
