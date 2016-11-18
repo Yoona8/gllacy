@@ -681,31 +681,32 @@ body {
   border: 0;
 }
 
-.userbar__cart-del {
+.userbar__cart-del a {
   position: relative;
-  width: 11px;
+  display: block;
+  width: 14px;
+  height: 14px;
   font-size: 0;
   cursor: pointer;
 }
 
-.userbar__cart-del::before,
-.userbar__cart-del::after {
+.userbar__cart-del a::before,
+.userbar__cart-del a::after {
   content: '';
   position: absolute;
   top: 50%;
   left: 0;
   width: 14px;
   height: 1px;
-  margin-top: -2px;
   background-color: #323232;
   border-radius: 1px;
 }
 
-.userbar__cart-del::before {
+.userbar__cart-del a::before {
   transform: rotate(45deg);
 }
 
-.userbar__cart-del::after {
+.userbar__cart-del a::after {
   transform: rotate(-45deg);
 }
 
