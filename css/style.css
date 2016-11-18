@@ -72,7 +72,7 @@ body {
 
 .footer {
   position: relative;
-  padding: 30px 0 28px;
+  padding: 35px 0 28px;
 }
 
 .social,
@@ -86,7 +86,7 @@ body {
 }
 
 .social {
-  width: 38%;
+  width: 37%;
 }
 
 .menu {
@@ -288,7 +288,7 @@ body {
 .search__form {
   position: relative;
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 12px;
   vertical-align: middle;
 }
 
@@ -511,7 +511,7 @@ body {
   display: inline-block;
   width: 154px;
   height: 64px;
-  margin-right: 24px;
+  margin-right: 10px;
   vertical-align: top;
 }
 
@@ -547,7 +547,7 @@ body {
 
 .nav__link {
   display: inline-block;
-  padding: 6px 14px 8px;
+  padding: 8px 12px 8px;
   font-weight: 700;
   text-decoration: none;
   border-radius: 20px;
@@ -645,7 +645,7 @@ body {
 
 .userbar {
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 12px;
   vertical-align: middle;
 }
 
@@ -654,6 +654,10 @@ body {
   position: relative;
   display: inline-block;
   vertical-align: top;
+}
+
+.userbar__cart-block--empty .btn {
+  padding-right: 34px;
 }
 
 .userbar__login-block:hover .hover-wrapper,
@@ -772,7 +776,7 @@ body {
 .event,
 .news {
   margin-left: -26px;
-  margin-bottom: 40px;
+  margin-bottom: 14px;
   font-size: 0;
 }
 
@@ -780,9 +784,9 @@ body {
 .news__item {
   display: inline-block;
   width: 526px;
-  min-height: 192px;
-  padding: 19px 17px;
-  margin-left: 26px;
+  min-height: 194px;
+  padding: 17px 17px;
+  margin: 0 0 26px 26px;
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 1.222;
@@ -808,7 +812,7 @@ body {
 
 .event__title {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 17px;
   font-weight: 700;
   font-size: 3.5rem;
   line-height: 1.171;
@@ -838,8 +842,7 @@ body {
   position: relative;
   display: inline-block;
   width: 267px;
-  margin-left: 26px;
-  margin-bottom: 30px;
+  margin: 0 0 21px 26px;
   vertical-align: top;
 }
 
@@ -888,14 +891,14 @@ body {
   z-index: 2;
   width: 267px;
   height: 267px;
-  margin-bottom: 19px;
+  margin-bottom: 14px;
   border-radius: 50%;
 }
 
 .goods__price {
   position: absolute;
   left: 0;
-  top: 210px;
+  top: 197px;
   z-index: 3;
   margin: 0;
   font-weight: 700;
@@ -924,7 +927,7 @@ body {
 }
 
 .advantages {
-  padding: 25px 20px;
+  padding: 21px 20px 5px;
   margin-bottom: 40px;
   font-size: 0;
   border-radius: 12px;
@@ -935,7 +938,7 @@ body {
 
 .advantages__title {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-weight: 500;
   font-size: 2.4rem;
 }
@@ -945,7 +948,7 @@ body {
   display: inline-block;
   width: 484px;
   padding-left: 56px;
-  margin: 0 26px 25px 0;
+  margin: 0 26px 20px 0;
   font-size: 1.6rem;
   line-height: 1.375;
   vertical-align: top;
@@ -984,7 +987,7 @@ body {
 
 .news__item {
   width: 510px;
-  min-height: 160px;
+  min-height: 149px;
   padding: 30px 20px;
   font-size: 1.6rem;
   line-height: 1.375;
@@ -993,6 +996,7 @@ body {
 }
 
 .news__item--blog {
+  padding: 17px 26px 43px 14px;
   color: #323232;
   background-color: #ffffff;
   background-image: url('../img/bg/bg-strawberry.jpg');
@@ -1001,7 +1005,7 @@ body {
 }
 
 .news__item--blog p {
-  margin: 0 0 8px;
+  margin: 0 0 3px;
 }
 
 .news__blog-title {
@@ -1027,12 +1031,16 @@ body {
 
 .news__form {
   position: relative;
-  margin-top: 30px;
+  margin-top: 34px;
 }
 
 .news__form .input {
-  width: 63%;
+  width: 66%;
   margin-right: 11px;
+}
+
+.news__form .btn-main {
+  padding: 10px 14px 12px;
 }
 
 .map {
@@ -1370,7 +1378,7 @@ body {
   display: inline-block;
   width: 32px;
   height: 32px;
-  margin-right: 12px;
+  margin-right: 11px;
   border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   background-image: url('../img/icons/sprite.png');
@@ -1415,7 +1423,7 @@ body {
   line-height: 1.385;
   border: none;
   white-space: nowrap;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .menu__link:hover,
@@ -1506,7 +1514,7 @@ body {
   display: inline-block;
   width: 16px;
   height: 16px;
-  margin-right: 2px;
+  margin-right: 4px;
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -1538,13 +1546,13 @@ body {
 .slider__slide {
   display: none;
   max-width: 700px;
-  margin: 320px auto 0;
+  margin: 314px auto 0;
   text-align: center;
 }
 
 .slider__title {
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 6.0rem;
   line-height: 1;
@@ -1555,7 +1563,7 @@ body {
 .slider__thumbs {
   position: absolute;
   left: 0;
-  bottom: 20px;
+  bottom: 23px;
 }
 
 .slider__radio[value="radio-one"]:checked ~* .slider__slide--one {
