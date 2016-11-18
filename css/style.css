@@ -215,6 +215,7 @@ body {
   text-decoration: none;
   vertical-align: top;
   color: #ffffff;
+  background-color: #f16743;
   background-image: linear-gradient(#f16743 0%, #c83725 100%);
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   border: none;
@@ -938,7 +939,7 @@ body {
   margin-bottom: 40px;
   font-size: 0;
   border-radius: 12px;
-  background: #eddec1;
+  background-color: #eddec1;
   background-image: url('../img/bg/bg-waffle.jpg');
   background-repeat: repeat;
 }
