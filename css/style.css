@@ -530,6 +530,7 @@ body {
 
 .nav {
   display: inline-block;
+  max-width: 75%;
   margin-top: 8px;
   vertical-align: top;
 }
