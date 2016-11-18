@@ -543,6 +543,7 @@ body {
   position: relative;
   display: inline-block;
   border-radius: 20px;
+  vertical-align: top;
 }
 
 .nav__item:hover {
@@ -663,6 +664,7 @@ body {
 .userbar__cart-block {
   position: relative;
   display: inline-block;
+  vertical-align: top;
 }
 
 .userbar__login-block:hover .hover-wrapper,
@@ -875,6 +877,7 @@ body {
 
 .goods__item:hover .btn-main {
   display: inline-block;
+  vertical-align: top;
 }
 
 .goods__item--featured::before {
@@ -1097,6 +1100,7 @@ body {
   display: inline-block;
   margin-right: 20px;
   font-size: 1.4rem;
+  vertical-align: top;
 }
 
 .breadcrumbs__link::after {
@@ -1466,6 +1470,7 @@ body {
   text-align: right;
   font-size: 1.2rem;
   color: #fefefe;
+  vertical-align: top;
 }
 
 .developer__text::before {
