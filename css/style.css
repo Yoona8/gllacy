@@ -1050,7 +1050,10 @@ body {
   width: 100%;
   height: 430px;
   margin: 0 auto;
-  background-color: #cee0c0;
+  background-image: url('../img/bg/map.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .map .container {
