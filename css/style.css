@@ -348,7 +348,9 @@ body {
   top: 50%;
   left: 50%;
   width: 427px;
+  max-height: 100vh;
   transform: translate(-50%, -50%);
+  overflow: auto;
 }
 
 .map__form--open {
