@@ -2,6 +2,7 @@
 
 Проект создан в рамках обучения на интенсивном онлайн-курсе «[Базовый HTML и CSS](https://htmlacademy.ru/intensive/htmlcss)» 
 от [HTML Academy](https://htmlacademy.ru).
+Демо: https://yoona8.github.io/gllacy/
 
 ## Технологии
 
